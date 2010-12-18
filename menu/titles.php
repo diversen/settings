@@ -1,5 +1,9 @@
 <?php
 
+if (!session::checkAccessControl('allow_edit_settings')){
+    return;
+}
+
 settings_view_titles();
 if (isset($_POST['submit'])){
     $menu = new menus();

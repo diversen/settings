@@ -35,7 +35,7 @@ function view_order_list($menus){
         if (empty($value['url'])){ ?>
             <td><input type="hidden" name="order[<?php echo $value['title']?>]" value="<?php echo $value['weight']?>"></td>
         <?php } else { ?>
-            <td><?php echo lang::translate($value['title'])?></td>
+            <td><?php echo $value['title']?></td>
             <td><input type="text" name="order[<?php echo $value['title']?>]" value="<?php echo $value['weight']?>" size="2" maxlength = "2"></td>
         </tr><?php
         }

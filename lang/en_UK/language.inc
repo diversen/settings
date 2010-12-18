@@ -72,3 +72,5 @@ $_COS_LANG_MODULE['Edit Template Css'] = 'Edit Template Css';
 $_COS_LANG_MODULE['settings_css_updated'] = 'Stylesheet Updated';
 
 
+
+$_COS_LANG_MODULE['settings_menu_titles_updated'] = 'Menu titles has been updated';

@@ -74,4 +74,23 @@ class menus extends db {
 
         self::$dbh->commit();
     }
+
+    /**
+     * method for updating main menu
+     *
+     * @todo    return something usefull
+     */
+    function updateMenuTitles (){
+        //$menus = $this->getMenuList();
+        //$order = $_POST['order'];
+
+        self::$dbh->beginTransaction();
+        foreach ($_POST as $key => $val){
+            $sql = "UPDATE `menus` SET `title`= '$val' WHERE `id` = '$key'";
+            $stmt = $this->rawQuery($sql);
+            $stmt->execute();
+        }
+
+        self::$dbh->commit();
+    }
 }

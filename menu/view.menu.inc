@@ -12,7 +12,7 @@
  * @param   array     menus
  * @return  void
  */
-
+include_once "form.php";
 function view_order_list($menus){
     if (empty($menus)){
         return;
@@ -79,7 +79,7 @@ function view_enable_list($menus){
 }
 
 /**
- * function for disabling menus
+ * function for disabling menus (unused for now
  *
  * @param   array     menus
  * @return  void
@@ -109,7 +109,7 @@ function view_disable_list($menus){
 }
 
 /**
- * function for viewing core menu items
+ * function for viewing core menu items (unused for now)
  * @param array menu items
  */
 function view_core ($menus){ ?>
@@ -120,4 +120,25 @@ function view_core ($menus){ ?>
     } ?>
 </p><?php
 
+}
+
+function settings_view_titles (){
+
+    $menu = new menus();
+    $menus = $menu->getMenuList();
+
+    view_form_start(lang::translate('settings_menu_set_main_titles'));
+    $str = "<form method = \"post\" action = \"\">\n";
+    $str.= "<table>\n";
+    foreach ($menus as $key => $val){
+        //$str.="<input type =\"text\" name=\"$val[title]\" value =\"$val[title]\" /><br />";
+        $str.="<tr><td>\n";
+        $str.= HTML_Form::returnText($val['id'], $val['title']);
+        $str.="</td></tr>\n";
+    }
+    $str.= "<tr><td>" . HTML_Form::returnSubmit(lang::translate('Update')) . "</td></tr>\n";
+    $str.="</table>\n";
+    $str.="</form>\n";
+    print $str;
+    view_form_end();
 }

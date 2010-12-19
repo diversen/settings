@@ -33,7 +33,7 @@ class menus extends db {
      *                       included
      */
     function getMenuList(){
-        $enabled = $this->selectQuery("select * from `menus` where parent = '0' OR parent = NULL ORDER BY `weight`");
+        $enabled = $this->selectQuery("select * from `menus` where parent = '0' OR parent = 'NULL' ORDER BY `weight`");
         return $enabled;
     }
 

@@ -102,6 +102,10 @@ class templateManip extends db {
         while (false !== ($entry = $dir->read())) {
             if ($entry == '.') continue;
             if ($entry == '..') continue;
+
+            $template_file = $template_path . "/$entry/template.inc";
+            if (!file_exists($template_file)) continue;
+
             $row['id'] = $entry;
             $row['title'] = $entry;
             $rows[] = $row;

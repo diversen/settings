@@ -130,7 +130,16 @@ class templateManip extends db {
         $rows = array();
         while (false !== ($entry = $dir->read())) {
             if ($entry == '.') continue;
+            if ($entry == '.git') continue;
             if ($entry == '..') continue;
+
+            $css_dir = $template_path . "/$entry";
+            if (is_dir($css_dir)){
+                $row['id'] = $entry;
+                $row['title'] = $entry;
+                $rows[] = $row;
+                continue;
+            }
 
             if (!strstr($entry, "common")){
                 continue;

@@ -39,3 +39,14 @@ $_COS_LANG_MODULE['Delete Current Logo'] = 'Slet nuværende logo';
 $_COS_LANG_MODULE['Only unique values allowed for every menu item'] = 'Kun unikke værdier kan sættes for menu indstillingerne';
 
 $_COS_LANG_MODULE['Description'] = 'Site beskrivelse';
+
+$_COS_LANG_MODULE['Set Misc Settings'] = 'Opdater diverse';
+
+$_COS_LANG_MODULE['Menus'] = 'Menuer';
+$_COS_LANG_MODULE['settings_menu_titles_updated'] = 'Menu titler opdateret';
+$_COS_LANG_MODULE['Edit Template Css'] = 'Ret Template Css';
+$_COS_LANG_MODULE['settings_css_updated'] = 'CSS updated';
+
+$_COS_LANG_MODULE['Edit Stylesheet'] = 'Ret Stylesheet';
+$_COS_LANG_MODULE['Select Stylesheet'] = 'Vælg Stylesheet';
+$_COS_LANG_MODULE['Update'] = 'Opdater';

@@ -12,7 +12,8 @@ $_INSTALL['MAIN_MENU_ITEM'] = array (
     'auth' => 'super',
     'module_name' => 'settings',
     'parent' => 0,
-    'weight' => 3
+    'weight' => 3,
+    'admin_only' => true
 );
 
 $_INSTALL['VERSION'] = 1.041;

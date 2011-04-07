@@ -1,6 +1,6 @@
 <?php
 
-if (!session::checkAccessControl('allow_edit_settings')){
+if (!session::checkAccessControl('settings_allow_edit')){
     return;
 }
 

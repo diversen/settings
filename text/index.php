@@ -1,14 +1,9 @@
 <?php
 
-/**
- * controller file for settings/text
- *
- * @package settings
- */
-
-if (!session::checkAccessControl('allow_edit_settings')){
+if (!session::checkAccessControl('settings_allow_edit')){
     return;
 }
+
 template::setTitle(lang::translate('Set Misc Settings'));
 $settings = new settings();
 if (isset($_POST['submit'])){

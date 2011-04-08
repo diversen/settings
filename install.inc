@@ -16,7 +16,7 @@ $_INSTALL['MAIN_MENU_ITEM'] = array (
     'admin_only' => true
 );
 
-$_INSTALL['VERSION'] = 1.3;
+$_INSTALL['VERSION'] = 1.31;
 
 $_INSTALL['PUBLIC_CLONE_URL'] = 'git://github.com/diversen/settings.git';
 $_INSTALL['PRIVATE_CLONE_URL'] = 'git@github.com:diversen/settings.git';

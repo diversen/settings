@@ -5,11 +5,11 @@
  *
  * @package     settings
  */
-
+$auth = get_module_ini('settings_allow_edit');
 $_INSTALL['MAIN_MENU_ITEM'] = array (
     'title' => 'Settings',
     'url' => '/settings/index',
-    'auth' => 'super',
+    'auth' => $auth,
     'module_name' => 'settings',
     'parent' => 0,
     'weight' => 3,

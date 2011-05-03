@@ -15,7 +15,7 @@ $_MODULE_MENU = array (
     array(
         'title' => lang::translate('Edit Misc Settings'),
         'url' => '/settings/text/index',
-        'auth' => 'super'
+        'auth' => 'admin'
     ),
     array(
         'title' => lang::translate('Set template'),

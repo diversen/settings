@@ -9,7 +9,6 @@ template::setTitle(lang::translate('Edit Template Css'));
 $t = new templateManip();
 $values = $t->getCss('update');
 
-
 if (isset($_POST['css'])){
     $t->validateCss();
     if (empty($t->errors)){

@@ -7,13 +7,14 @@
  */
 $auth = get_module_ini('settings_allow_edit');
 $_INSTALL['MAIN_MENU_ITEM'] = array (
-    'title' => 'Settings',
+    'title' => 'settings_looks',
     'url' => '/settings/index',
     'auth' => $auth,
     'module_name' => 'settings',
     'parent' => 0,
     'weight' => 3,
-    'admin_only' => true
+    'admin_only' => true,
+    'section' => 'settings'
 );
 
 $_INSTALL['VERSION'] = 1.31;

@@ -16,3 +16,4 @@ $_COS_LANG_MODULE['Core menus'] = 'Core menus';
 $_COS_LANG_MODULE['settings_menu_set_main_titles'] = 'Vælg menu titler';
 $_COS_LANG_MODULE['Update'] = 'Update';
 $_COS_LANG_MODULE['Template Style'] = 'Template Style';
+$_COS_LANG_MODULE['settings_looks'] = 'Template og Logo';

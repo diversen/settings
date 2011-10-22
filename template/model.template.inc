@@ -46,7 +46,7 @@ class templateManip extends db {
      * Validate user input
      */    
     public function validateCss(){
-
+        
     }
 
     /**
@@ -134,7 +134,8 @@ class templateManip extends db {
             if ($entry == '..') continue;
 
             $css_dir = $template_path . "/$entry";
-            if (is_dir($css_dir)){
+            $valid_css_file = $css_dir . "/$entry.css";
+            if (is_dir($css_dir) && file_exists($valid_css_file)){
                 $row['id'] = $entry;
                 $row['title'] = $entry;
                 $rows[] = $row;

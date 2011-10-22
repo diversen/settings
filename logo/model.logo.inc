@@ -45,9 +45,24 @@ class logo extends db {
      */
     public function moveFile(){
         if(empty($_FILES['logo']['name'])) {
-            $this->errors[] = 'No file spcified';
+            $this->errors[] = lang::translate('settings_upload_no_file_specified');
             return 0;
         }
+        
+        $valid_types[] = "image/gif";
+        $valid_types[] = "image/jpeg";
+        $valid_types[] = "image/pjpeg";
+        $valid_types[] = "image/png";
+        
+        if (!in_array($_FILES['logo']['type'], $valid_types)) {
+            echo $_FILES['logo']['name']['type'];
+            print_r($_FILES);
+            $this->errors[] = lang::translate('settings_upload_no_file_specified');
+            echo "bla";
+            return 0;
+        }
+        
+        
         $uploaddir = $_SERVER['DOCUMENT_ROOT'] . "/logo/";
         $uploadfile = $uploaddir . basename($_FILES['logo']['name']);
         $this->unlinkFile();

@@ -23,6 +23,13 @@ $_MODULE_MENU = array (
         'url' => '/settings/template/index',
         'auth' => 'admin',
     ),
+    
+    array(
+        'title' => lang::translate('Edit Template Css'),
+        'url' => '/settings/template/css',
+        'auth' => 'admin',
+    ),
+    
     /*
     array(
         'title' => lang::translate('Menu Order'),

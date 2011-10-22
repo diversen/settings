@@ -3,6 +3,7 @@
 /**
  * @ignore
  */
+/*
 $auth = get_module_ini('settings_allow_edit');
 $_SUB_MODULE_MENU = array (
     array(
@@ -15,4 +16,4 @@ $_SUB_MODULE_MENU = array (
         'url' => '/settings/template/css',
         'auth' => $auth
     ),
-);
+);*/

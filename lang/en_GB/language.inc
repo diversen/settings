@@ -74,3 +74,5 @@ $_COS_LANG_MODULE['settings_css_updated'] = 'Stylesheet Updated';
 
 
 $_COS_LANG_MODULE['settings_menu_titles_updated'] = 'Menu titles has been updated';
+$_COS_LANG_MODULE['settings_upload_no_file_specified'] = 'Please select a file';
+$_COS_LANG_MODULE['settings_upload_wrong_filetype_specified'] = 'Wrong file type: Only jpeg, gif og png allowed';

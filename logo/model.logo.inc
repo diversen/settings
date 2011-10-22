@@ -55,10 +55,7 @@ class logo extends db {
         $valid_types[] = "image/png";
         
         if (!in_array($_FILES['logo']['type'], $valid_types)) {
-            echo $_FILES['logo']['name']['type'];
-            print_r($_FILES);
-            $this->errors[] = lang::translate('settings_upload_no_file_specified');
-            echo "bla";
+            $this->errors[] = lang::translate('settings_upload_wrong_filetype_specified');
             return 0;
         }
         

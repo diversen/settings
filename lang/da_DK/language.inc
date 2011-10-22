@@ -50,3 +50,6 @@ $_COS_LANG_MODULE['settings_css_updated'] = 'CSS updated';
 $_COS_LANG_MODULE['Edit Stylesheet'] = 'Ret Stylesheet';
 $_COS_LANG_MODULE['Select Stylesheet'] = 'Vælg Stylesheet';
 $_COS_LANG_MODULE['Update'] = 'Opdater';
+
+$_COS_LANG_MODULE['settings_upload_no_file_specified'] = 'Ingen Fil valgt';
+$_COS_LANG_MODULE['settings_upload_wrong_filetype_specified'] = 'Forkert fil type: Kun jpeg, gif og png kan benyttes';

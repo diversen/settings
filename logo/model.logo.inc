@@ -27,15 +27,12 @@ class logo extends db {
      * @return <int> 1 on succes or 0 on failure
      */
     public function updateLogo (){
-        try {
-            $values = 
-                array('logo'=> $_FILES['logo']['name']);
+
+        $values = 
+            array('logo'=> $_FILES['logo']['name']);
             // so far only first row of settings table is populated
-            $res = $this->update('settings', $values, 1);
-            return $res;
-        } catch (PDOException $e) {
-            $this->fatalError($e->getMessage());
-        }
+        $res = $this->update('settings', $values, 1);
+        return $res;
     }
 
     /**
@@ -58,10 +55,13 @@ class logo extends db {
             $this->errors[] = lang::translate('settings_upload_wrong_filetype_specified');
             return 0;
         }
+                      
+        $uploaddir = get_files_path() . '/logo'; //$_SERVER['DOCUMENT_ROOT'] . "/logo/";
+        if (!file_exists($uploaddir)) {
+            mkdir($uploaddir);
+        }
         
-        
-        $uploaddir = $_SERVER['DOCUMENT_ROOT'] . "/logo/";
-        $uploadfile = $uploaddir . basename($_FILES['logo']['name']);
+        $uploadfile = $uploaddir . '/' . basename($_FILES['logo']['name']);
         $this->unlinkFile();
         if (isset($_FILES['logo'])){
             if (move_uploaded_file($_FILES['logo']['tmp_name'], $uploadfile)) {
@@ -78,12 +78,12 @@ class logo extends db {
      * @return boolean  true on success or false on failure
      */
     public function unlinkFile(){
-        $uploaddir = $_SERVER['DOCUMENT_ROOT'] . "/logo/";
+        $uploaddir = get_files_path() . "/logo";
         $row = $this->selectOne('settings', 'id', 1);
         if (empty($row['logo'])){
             return false;
         }
-        $unlinkfile = $uploaddir . $row['logo'];
+        $unlinkfile = $uploaddir . '/' . $row['logo'];
         if ($this->logoExist()){
             return unlink($unlinkfile);
         } else {
@@ -97,12 +97,12 @@ class logo extends db {
      * @return boolean  true on success or false on failure
      */
     public function getLogoFile(){
-        $uploaddir = $_SERVER['DOCUMENT_ROOT'] . "/logo/";
+        $uploaddir = get_files_path() . "/logo";
         $row = $this->selectOne('settings', 'id', 1);
         if (empty($row['logo'])){
             return false;
         }
-        $unlinkfile = $uploaddir . $row['logo'];
+        $unlinkfile = $uploaddir . '/' . $row['logo'];
         return $unlinkfile;
     }
 
@@ -121,14 +121,10 @@ class logo extends db {
      * @return  boolean true on success or false on failure
      */
     function deleteLogoDb(){
-        try {
-            $values =
-                array('logo'=> '');
-            // so far only first row of settings table is populated
-            $res = $this->update('settings', $values, 1);
-            return $res;
-        } catch (PDOException $e) {
-            $this->fatalError($e->getMessage());
-        }
+        $values =
+            array('logo'=> '');
+        // so far only first row of settings table is populated
+        $res = $this->update('settings', $values, 1);
+        return $res;
     }
 }

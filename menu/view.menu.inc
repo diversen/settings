@@ -133,7 +133,7 @@ function settings_view_titles (){
     foreach ($menus as $key => $val){
         //$str.="<input type =\"text\" name=\"$val[title]\" value =\"$val[title]\" /><br />";
         $str.="<tr><td>\n";
-        $str.= HTML_Form::returnText($val['id'], $val['title']);
+        $str.= HTML_Form::returnText($val['id'], lang::translate($val['title']));
         $str.="</td></tr>\n";
     }
     $str.= "<tr><td>" . HTML_Form::returnSubmit(lang::translate('Update')) . "</td></tr>\n";

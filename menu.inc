@@ -12,12 +12,7 @@ $_MODULE_MENU = array (
         'url' => '/settings/logo/index',
         'auth' => 'admin'
     ),
-    /*
-    array(
-        'title' => lang::translate('Edit Misc Settings'),
-        'url' => '/settings/text/index',
-        'auth' => 'admin'
-    ),*/
+
     array(
         'title' => lang::translate('Set template'),
         'url' => '/settings/template/index',
@@ -29,11 +24,4 @@ $_MODULE_MENU = array (
         'url' => '/settings/template/css',
         'auth' => 'admin',
     ),
-    
-    /*
-    array(
-        'title' => lang::translate('Menu Order'),
-        'url' => '/settings/menu/order',
-        'auth' => 'admin'
-    ),*/
 );

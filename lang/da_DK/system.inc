@@ -6,6 +6,7 @@
  * @package     settings
  */
 $_COS_LANG_MODULE['Settings'] = 'Indstillinger';
+$_COS_LANG_MODULE['settings'] = 'Indstillinger';
 
 $_COS_LANG_MODULE['settings_menu_title'] = 'Titler';
 

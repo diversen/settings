@@ -21,7 +21,7 @@ function view_update_template ($values = NULL){
 <fieldset>
 <legend><?php echo lang::translate('Edit Template')?></legend>
 <p><label for="template"><?php echo lang::translate('Select template')?>:</label>
-<?php echo view_drop_down('template', templateManip::getTemplates(), 'title', 'id', $values['template'])?></p>
+<?php echo html::selectClean('template', templateManip::getTemplates(), 'title', 'id', $values['template'])?></p>
 <input type="submit" name="submit" value="<?php echo lang::translate('Update')?>"><br />
 </fieldset>
 </form>
@@ -45,7 +45,7 @@ function view_update_css ($values = NULL){
 <fieldset>
 <legend><?php echo lang::translate('Edit Stylesheet')?></legend>
 <p><label for="css"><?php echo lang::translate('Select Stylesheet')?>:</label>
-<?php echo view_drop_down('css', templateManip::getAllCss(), 'title', 'id', $values['css'])?></p>
+<?php echo html::selectClean('css', templateManip::getAllCss(), 'title', 'id', $values['css'])?></p>
 <input type="submit" name="submit" value="<?php echo lang::translate('Update')?>"><br />
 </fieldset>
 </form>

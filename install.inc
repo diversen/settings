@@ -5,7 +5,7 @@
  *
  * @package     settings
  */
-$auth = get_module_ini('settings_allow_edit');
+$auth = config::getModuleIni('settings_allow_edit');
 $_INSTALL['MAIN_MENU_ITEM'] = array (
     'title' => 'settings_looks',
     'url' => '/settings/index',

@@ -56,7 +56,7 @@ class logo extends db {
             return 0;
         }
                       
-        $uploaddir = get_files_path() . '/logo'; //$_SERVER['DOCUMENT_ROOT'] . "/logo/";
+        $uploaddir = config::getFullFilesPath() . '/logo'; //$_SERVER['DOCUMENT_ROOT'] . "/logo/";
         if (!file_exists($uploaddir)) {
             mkdir($uploaddir);
         }
@@ -78,7 +78,7 @@ class logo extends db {
      * @return boolean  true on success or false on failure
      */
     public function unlinkFile(){
-        $uploaddir = get_files_path() . "/logo";
+        $uploaddir = config::getFullFilesPath() . "/logo";
         $row = $this->selectOne('settings', 'id', 1);
         if (empty($row['logo'])){
             return false;
@@ -97,7 +97,7 @@ class logo extends db {
      * @return boolean  true on success or false on failure
      */
     public function getLogoFile(){
-        $uploaddir = get_files_path() . "/logo";
+        $uploaddir = config::getFullFilesPath() . "/logo";
         $row = $this->selectOne('settings', 'id', 1);
         if (empty($row['logo'])){
             return false;

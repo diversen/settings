@@ -9,6 +9,7 @@ template::setTitle(lang::translate('Edit Template'));
 $t = new templateManip();
 $values = $t->getTemplate('update');
 
+if (isset($_POST)) $_POST = html::specialEncode ($_POST);
 if (isset($_POST['template'])){
     $t->validateTemplate();
     if (empty($t->errors)){

@@ -6,6 +6,8 @@ if (!session::checkAccessControl('settings_allow_edit')){
 
 template::setTitle(lang::translate('Edit Template Css'));
 
+if (isset($_POST)) $_POST = html::specialEncode ($_POST);
+
 $t = new templateManip();
 $values = $t->getCss('update');
 

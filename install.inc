@@ -1,11 +1,5 @@
 <?php
 
-/**
- * Install file for settings
- *
- * @package     settings
- */
-$auth = config::getModuleIni('settings_allow_edit');
 $_INSTALL['MAIN_MENU_ITEM'] = array (
     'title' => 'settings_looks',
     'url' => '/settings/index',
@@ -17,7 +11,7 @@ $_INSTALL['MAIN_MENU_ITEM'] = array (
     'section' => 'settings'
 );
 
-$_INSTALL['VERSION'] = 1.41;
+$_INSTALL['VERSION'] = 1.42;
 
 $_INSTALL['PUBLIC_CLONE_URL'] = 'git://github.com/diversen/settings.git';
 $_INSTALL['PRIVATE_CLONE_URL'] = 'git@github.com:diversen/settings.git';

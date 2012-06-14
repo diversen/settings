@@ -9,9 +9,9 @@ $_COS_LANG_MODULE['settings'] = 'Indstillinger';
 
 #settings
 $_COS_LANG_MODULE['Site Settings'] = 'Webside Indstillinger';
-$_COS_LANG_MODULE['Change Logo']= 'Rediger Logo';
+$_COS_LANG_MODULE['Change Logo']= 'Logo';
 $_COS_LANG_MODULE['Set footer message'] = 'Rediger side foden';
-$_COS_LANG_MODULE['Set template'] = 'Vælg template';
+$_COS_LANG_MODULE['Set template'] = 'Template';
 $_COS_LANG_MODULE['Settings'] = 'Indstillinger';
 $_COS_LANG_MODULE['Modules'] = 'Moduler';
 $_COS_LANG_MODULE['List Modules'] = 'List Moduler';
@@ -44,8 +44,8 @@ $_COS_LANG_MODULE['Set Misc Settings'] = 'Opdater diverse';
 
 $_COS_LANG_MODULE['Menus'] = 'Menuer';
 $_COS_LANG_MODULE['settings_menu_titles_updated'] = 'Menu titler opdateret';
-$_COS_LANG_MODULE['Edit Template Css'] = 'Ret Template Css';
-$_COS_LANG_MODULE['settings_css_updated'] = 'CSS updated';
+$_COS_LANG_MODULE['Edit Template Css'] = 'Stilark';
+$_COS_LANG_MODULE['settings_css_updated'] = 'Stilark opdateret';
 
 $_COS_LANG_MODULE['Edit Stylesheet'] = 'Ret Stylesheet';
 $_COS_LANG_MODULE['Select Stylesheet'] = 'Vælg Stylesheet';

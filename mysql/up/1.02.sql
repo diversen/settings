@@ -8,4 +8,4 @@ CREATE TABLE `settings` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=UTF8;
 
-INSERT INTO `settings` (`template`) values ('naked');
+INSERT INTO `settings` (`template`) values ('clean');

@@ -9,37 +9,24 @@
 /**
  * function for viewing logo form
  */
-function view_create (){ ?>
-<div id="form_main">
-<!-- The data encoding type, enctype, MUST be specified as below -->
-<form enctype="multipart/form-data" action="" method="POST">
-<fieldset>
-<legend><?php echo lang::translate('Edit Logo')?>:</legend>
-<label for="logo"><?php echo lang::translate('Logo file')?>:</label><br />
-<input type="file" name="logo" value="" /><br />
-<label for="submit"></label><br />
-<input type="submit" name="submit" value="<?php echo lang::translate('Update')?>"><br />
-</fieldset>
-</form>
-</div>
-<?php
+function view_settings_logo_form ($options = array ()){ 
+    print_r($options);
+    $vars = array (
+        'legend' => lang::translate('Edit Logo'),
+        'label_logo_file' => lang::translate('Logo file'),
+        'filename' => $options['filename'],
+    );
+    echo view::get('settings', 'logo_upload', $vars);
 
 }
 
 /**
  * function for viewing delete logo
  */
-function view_delete (){ ?>
-<div id="form_main">
-<!-- The data encoding type, enctype, MUST be specified as below -->
-<form method="POST" action="">
-<fieldset>
-<legend><?php echo lang::translate('Delete Logo')?>:</legend>
-<label for="submit"></label>
-<input type="submit" name="delete" value="<?php echo lang::translate('Delete Current Logo')?>">
-</fieldset>
-</form>
-</div>
-<?php
-
+function view_settings_logo_delete (){ 
+    $vars = array (
+        'logo_delete_legend' => lang::translate('Delete Logo'),
+        'logo_delete_submit' => lang::translate('Delete Current Logo'),
+    );
+    echo view::get('settings', 'logo_delete', $vars);
 }

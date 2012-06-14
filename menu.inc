@@ -12,6 +12,12 @@ $_MODULE_MENU = array (
         'url' => '/settings/logo/index',
         'auth' => 'admin'
     ),
+    
+    array(
+        'title' => lang::translate('settings_menu_favicon'),
+        'url' => '/settings/favicon/index',
+        'auth' => 'admin'
+    ),
 
     array(
         'title' => lang::translate('Set template'),

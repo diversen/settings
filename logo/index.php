@@ -38,6 +38,6 @@ if (!empty($_POST['submit'])){
 } else {
     view_settings_logo_form($options);
     if ($logo->getLogoFile('/logo')){
-        view_settings_logo_delete();
+        view_settings_logo_delete($options);
     }
 }

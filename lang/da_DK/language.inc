@@ -55,3 +55,6 @@ $_COS_LANG_MODULE['settings_upload_no_file_specified'] = 'Ingen Fil valgt';
 $_COS_LANG_MODULE['settings_upload_wrong_filetype_specified'] = 'Forkert fil type. Følgende kan benyttes: ';
 
 $_COS_LANG_MODULE['settings_favicon_title'] = 'Favicon';
+
+$_COS_LANG_MODULE['settings_label_file'] = 'Fil';
+$_COS_LANG_MODULE['settings_legend_delete'] = 'Slet fil';

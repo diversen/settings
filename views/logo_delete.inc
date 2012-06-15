@@ -2,9 +2,9 @@
 <!-- The data encoding type, enctype, MUST be specified as below -->
 <form method="post" action="#">
 <fieldset>
-<legend><?=$vars['legend_delete']?></legend>
-<label for="submit"></label>
-<input type="submit" name="delete" value="<?=$vars['submit_delete']?>">
+<legend><?=$vars['legend']?></legend>
+<label for="delete"></label>
+<input type="submit" name="delete" value="<?=$vars['submit']?>">
 </fieldset>
 </form>
 </div>

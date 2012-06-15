@@ -25,5 +25,5 @@ $options = array (
     )
 );
 
-
+template::getFaviconHTML();
 image_form::imageFormController($options);

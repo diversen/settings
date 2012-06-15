@@ -55,8 +55,9 @@ class image_form {
      * @param string $filename
      * @return boolean $res true on success and false on failure.  
      */
-    public function updateLogo ($filename = 'logo'){
+    public function updateFile ($filename = 'logo'){
         $db = new db();
+
         $values = array(
             $this->db_column => $_FILES[$filename]['name']);
             // so far only first row of settings table is populated
@@ -108,7 +109,7 @@ class image_form {
         }
         
         $uploadfile = $uploaddir . '/' . basename($_FILES[$filename]['name']);
-        $this->unlinkFile();
+        $this->unlinkFile($path);
         if (isset($_FILES[$filename])){
             if (move_uploaded_file($_FILES[$filename]['tmp_name'], $uploadfile)) {
                 return true;
@@ -131,7 +132,7 @@ class image_form {
             return false;
         }
         $unlinkfile = $uploaddir . '/' . $row[$this->db_column];
-        if ($this->getLogoFile('/logo')){
+        if ($this->getFile('/logo')){
             return unlink($unlinkfile);
         } else {
             return false;
@@ -142,7 +143,7 @@ class image_form {
      * method for getting logo file
      * @return boolean $res true on success or false on failure
      */
-    public function getLogoFile($path = '/logo'){
+    public function getFile($path = '/logo'){
         $db = new db();
         $uploaddir = config::getFullFilesPath() . $path;
         $row = $db->selectOne($this->db_table, 'id', 1);
@@ -158,7 +159,7 @@ class image_form {
      * method for deleting logo in db table
      * @return  boolean true on success or false on failure
      */
-    function deleteLogoDb(){
+    function deleteFileFromDb(){
         $db = new db();
         $values =
             array($this->db_column => '');
@@ -186,20 +187,20 @@ class image_form {
             if (!$image->moveFile($options['filename'], $options['save_path'])){
                 view_form_errors($image->errors);
                 view_image_form_upload($options);
-                if ($image->getLogoFile($options['save_path'])){
+                if ($image->getFile($options['save_path'])){
                     view_image_form_delete($options);
                 }
             } else {
-                $image->updateLogo();
+                $image->updateFile($options['filename']);
                 http::locationHeader( $options['redirect'] );
             }    
         } else if (!empty($_POST['delete'])){
-            $image->unlinkFile();
-            $image->deleteLogoDb();
+            $image->unlinkFile($options['save_path']);
+            $image->deleteFileFromDb();
             http::locationHeader( $options['redirect']);
         } else {
             view_image_form_upload($options);
-            if ($image->getLogoFile($options['save_path'])){
+            if ($image->getFile($options['save_path'])){
                 view_image_form_delete($options);
             }
         }
@@ -218,9 +219,10 @@ class image_form {
  */
 function view_image_form_upload ($options ){ 
     $vars = array (
-        'legend_title' => $options['page_title'],
-        'label_file' => lang::translate('Logo file'),
+        'legend' => $options['page_title'],
+        'label' => lang::translate('settings_label_file'),
         'filename' => $options['filename'],
+        'submit' => lang::system('update')
     );
     echo view::get('settings', 'logo_upload', $vars);
 
@@ -231,8 +233,8 @@ function view_image_form_upload ($options ){
  */
 function view_image_form_delete ($options){ 
     $vars = array (
-        'legend_title' => lang::translate('Delete Logo'),
-        'submit' => lang::translate('Delete Current Logo'),
+        'legend' => lang::translate('settings_legend_delete'),
+        'submit' => lang::system('delete'),
         'filename' => $options['filename'],
     );
     echo view::get('settings', 'logo_delete', $vars);

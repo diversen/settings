@@ -9,35 +9,21 @@
 if (!session::checkAccessControl('settings_allow_edit')){
     return;
 }
+//print_r($_FILES); die;
 
 $options = array (
-    'page_title' => lang::translate('Edit favicon'), 
+    'page_title' => lang::translate('settings_favicon_title'), 
     'redirect' => '/settings/favicon/index', 
     'db_table' => 'settings',
     'db_column' => 'favicon',
-    'filename' => 'favicon'
+    'filename' => 'favicon',
+    'save_path' => '/favicon',
+    'mimetypes' => array (
+        'x-icon' => 'image/x-icon',
+        'icon' => 'image/vnd.microsoft.icon',
+        
+    )
 );
 
-template::setTitle($options['page_title']);
-$logo = new logo();
-if (!empty($_POST['submit'])){
-    if (!$logo->moveFile('favicon', '/favicon')){
-        view_form_errors($logo->errors);
-        view_settings_logo_form($options);
-        if ($logo->getLogoFile('/favicon')){
-            view_settings_logo_delete($options);
-        }
-    } else {
-        $logo->updateLogo();
-        http::locationHeader( $options['redirect'] );
-    }    
-} else if (!empty($_POST['delete'])){
-    $logo->unlinkFile('/favicon');
-    $logo->deleteLogoDb();
-    http::locationHeader( $options['redirect']);
-} else {
-    view_settings_logo_form($options);
-    if ($logo->getLogoFile('/favicon')){
-        view_settings_logo_delete($options);
-    }
-}
+
+image_form::imageFormController($options);

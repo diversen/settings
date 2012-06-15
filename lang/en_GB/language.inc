@@ -9,9 +9,9 @@ $_COS_LANG_MODULE['Settings'] = 'Settings';
 
 #settings
 $_COS_LANG_MODULE['Site Settings'] = 'Site Settings';
-$_COS_LANG_MODULE['Change Logo']= 'Change Logo';
+$_COS_LANG_MODULE['Change Logo']= 'Logo';
 $_COS_LANG_MODULE['Set footer message'] = 'Set footer message';
-$_COS_LANG_MODULE['Set template'] = 'Set template';
+$_COS_LANG_MODULE['Set template'] = 'Template';
 $_COS_LANG_MODULE['Settings'] = 'Settings';
 $_COS_LANG_MODULE['Modules'] = 'Modules';
 $_COS_LANG_MODULE['List Modules'] = 'List Modules';
@@ -68,11 +68,13 @@ $_COS_LANG_MODULE['Edit Stylesheet'] = 'Edit Stylesheet';
 $_COS_LANG_MODULE['Select Stylesheet'] = 'Select Stylesheet';
 $_COS_LANG_MODULE['Update'] = 'Update';
 
-$_COS_LANG_MODULE['Edit Template Css'] = 'Edit Template Css';
+$_COS_LANG_MODULE['Edit Template Css'] = 'Sylesheet';
 $_COS_LANG_MODULE['settings_css_updated'] = 'Stylesheet Updated';
 
 
 
 $_COS_LANG_MODULE['settings_menu_titles_updated'] = 'Menu titles has been updated';
 $_COS_LANG_MODULE['settings_upload_no_file_specified'] = 'Please select a file';
-$_COS_LANG_MODULE['settings_upload_wrong_filetype_specified'] = 'Wrong file type: Only jpeg, gif og png allowed';
+$_COS_LANG_MODULE['settings_upload_wrong_filetype_specified'] = 'Wrong file type. Only these are allowed: ';
+
+$_COS_LANG_MODULE['settings_favicon_title'] = 'Favicon';

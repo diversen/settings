@@ -1,8 +1,11 @@
 <?php
 
-include_module('settings/logo');
+/**
+ * @ignore
+ */
+include_once config::getModulePath('settings') . "/lib/image_form.inc";
 
-class favicon extends logo {
+class favicon extends image_form {
     
     
 }

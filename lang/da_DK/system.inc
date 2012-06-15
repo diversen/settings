@@ -19,3 +19,5 @@ $_COS_LANG_MODULE['Update'] = 'Update';
 $_COS_LANG_MODULE['Template Style'] = 'Template Style';
 $_COS_LANG_MODULE['settings_looks'] = 'Template og Logo';
 
+
+$_COS_LANG_MODULE['settings_menu_favicon'] = 'Favicon';

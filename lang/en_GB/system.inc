@@ -14,3 +14,6 @@ $_COS_LANG_MODULE['settings_menu_set_main_titles'] = 'Edit main menu titles';
 $_COS_LANG_MODULE['settings_looks'] = 'Template And Logo';
 
 $_COS_LANG_MODULE['settings_menu_favicon'] = 'Favicon';
+
+$_COS_LANG_MODULE['settings_meta_title'] = 'Meta tags';
+

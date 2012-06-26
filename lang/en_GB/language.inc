@@ -78,3 +78,11 @@ $_COS_LANG_MODULE['settings_upload_no_file_specified'] = 'Please select a file';
 $_COS_LANG_MODULE['settings_upload_wrong_filetype_specified'] = 'Wrong file type. Only these are allowed: ';
 
 $_COS_LANG_MODULE['settings_favicon_title'] = 'Favicon';
+
+$_COS_LANG_MODULE['settings_label_file'] = 'File';
+$_COS_LANG_MODULE['settings_legend_delete'] = 'Delete file';
+$_COS_LANG_MODULE['settings_meta_visible_for_robots'] = 'Visible for robots';
+$_COS_LANG_MODULE['settings_meta_in_visible_for_robots'] = 'Not visible for robots';
+$_COS_LANG_MODULE['settings_robots_legend'] = 'Update robots visibility';
+
+$_COS_LANG_MODULE['settings_meta_updated_action'] = 'Robot visibility updated';

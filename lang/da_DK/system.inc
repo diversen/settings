@@ -22,3 +22,6 @@ $_COS_LANG_MODULE['settings_looks'] = 'Template og Logo';
 
 $_COS_LANG_MODULE['settings_menu_favicon'] = 'Favicon';
 
+
+$_COS_LANG_MODULE['settings_meta_title'] = 'Meta';
+

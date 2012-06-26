@@ -58,3 +58,9 @@ $_COS_LANG_MODULE['settings_favicon_title'] = 'Favicon';
 
 $_COS_LANG_MODULE['settings_label_file'] = 'Fil';
 $_COS_LANG_MODULE['settings_legend_delete'] = 'Slet fil';
+
+$_COS_LANG_MODULE['settings_meta_in_visible_for_robots'] = 'Siden skal ikke indekseres af robotter';
+$_COS_LANG_MODULE['settings_meta_visible_for_robots'] = 'Siden indekseres af robotter';
+$_COS_LANG_MODULE['settings_robots_legend'] = 'Synlighed overfor robotter';
+
+$_COS_LANG_MODULE['settings_meta_updated_action'] = 'Meta tags opdateret';

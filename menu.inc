@@ -30,4 +30,10 @@ $_MODULE_MENU = array (
         'url' => '/settings/template/css',
         'auth' => 'admin',
     ),
+    
+    array(
+        'title' => lang::translate('settings_meta_title'),
+        'url' => '/settings/meta/index',
+        'auth' => 'admin',
+    ),
 );

@@ -31,9 +31,5 @@ $_MODULE_MENU = array (
         'auth' => 'admin',
     ),
     
-    array(
-        'title' => lang::translate('settings_meta_title'),
-        'url' => '/settings/meta/index',
-        'auth' => 'admin',
-    ),
+
 );

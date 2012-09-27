@@ -97,9 +97,9 @@ class templateManip extends db {
      */
     public static function getTemplates(){
         $template_path = _COS_PATH . '/htdocs/templates';
-        $dir = dir($template_path);
         $rows = array();
                 
+        // TODO: speed up
         $list = file::getFileListRecursive($template_path);
         foreach ($list as $val) {
             $info = pathinfo($val);
@@ -110,21 +110,6 @@ class templateManip extends db {
             $rows[] = $row;
         }
         return $rows;
-        /*
-        while (false !== ($entry = $dir->read())) {
-            if ($entry == '.') continue;
-            if ($entry == '..') continue;
-
-            $template_file = $template_path . "/$entry/template.inc";
-            if (!file_exists($template_file)) continue;
-
-            $row['id'] = $entry;
-            $row['title'] = $entry;
-            $rows[] = $row;
-
-        }
-        $dir->close();
-        return $rows; */
     }
 
     /**

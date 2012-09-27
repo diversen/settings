@@ -99,6 +99,18 @@ class templateManip extends db {
         $template_path = _COS_PATH . '/htdocs/templates';
         $dir = dir($template_path);
         $rows = array();
+                
+        $list = file::getFileListRecursive($template_path);
+        foreach ($list as $val) {
+            $info = pathinfo($val);
+            if ($info['basename'] != 'template.inc') continue;
+            $row = array ();
+            $row['id'] = $template = str_replace($template_path . '/', '', $info['dirname']);
+            $row['title'] = $template;
+            $rows[] = $row;
+        }
+        return $rows;
+        /*
         while (false !== ($entry = $dir->read())) {
             if ($entry == '.') continue;
             if ($entry == '..') continue;
@@ -112,7 +124,7 @@ class templateManip extends db {
 
         }
         $dir->close();
-        return $rows;
+        return $rows; */
     }
 
     /**

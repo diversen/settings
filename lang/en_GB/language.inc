@@ -69,8 +69,8 @@ $_COS_LANG_MODULE['Select Stylesheet'] = 'Select Stylesheet';
 $_COS_LANG_MODULE['Update'] = 'Update';
 
 $_COS_LANG_MODULE['Edit Template Css'] = 'Sylesheet';
-$_COS_LANG_MODULE['settings_css_updated'] = 'Stylesheet Updated';
-
+$_COS_LANG_MODULE['settings_css_updated'] = 'Stylesheet updated';
+$_COS_LANG_MODULE['settings_template_updated'] = 'Template updated';
 
 
 $_COS_LANG_MODULE['settings_menu_titles_updated'] = 'Menu titles has been updated';
@@ -86,3 +86,6 @@ $_COS_LANG_MODULE['settings_meta_in_visible_for_robots'] = 'Not visible for robo
 $_COS_LANG_MODULE['settings_robots_legend'] = 'Update robots visibility';
 
 $_COS_LANG_MODULE['settings_meta_updated_action'] = 'Robot visibility updated';
+
+$_COS_LANG_MODULE['settings_image_updated'] = 'Image uploaded and updated';
+$_COS_LANG_MODULE['settings_image_deleted'] = 'Image deleted';

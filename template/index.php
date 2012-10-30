@@ -14,7 +14,8 @@ if (isset($_POST['template'])){
     $t->validateTemplate();
     if (empty($t->errors)){
         $t->updateTemplate();
-        header( 'Location: /settings/template/index' );
+        session::setActionMessage(lang::translate('settings_template_updated'));
+        http::locationHeader('/settings/template/index' );
     } 
 } else {
     view_update_template($values);

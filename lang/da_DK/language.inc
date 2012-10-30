@@ -46,6 +46,7 @@ $_COS_LANG_MODULE['Menus'] = 'Menuer';
 $_COS_LANG_MODULE['settings_menu_titles_updated'] = 'Menu titler opdateret';
 $_COS_LANG_MODULE['Edit Template Css'] = 'Stilark';
 $_COS_LANG_MODULE['settings_css_updated'] = 'Stilark opdateret';
+$_COS_LANG_MODULE['settings_template_updated'] = 'Template opdateret';
 
 $_COS_LANG_MODULE['Edit Stylesheet'] = 'Ret Stylesheet';
 $_COS_LANG_MODULE['Select Stylesheet'] = 'Vælg Stylesheet';
@@ -64,3 +65,6 @@ $_COS_LANG_MODULE['settings_meta_visible_for_robots'] = 'Siden indekseres af rob
 $_COS_LANG_MODULE['settings_robots_legend'] = 'Synlighed overfor robotter';
 
 $_COS_LANG_MODULE['settings_meta_updated_action'] = 'Meta tags opdateret';
+
+$_COS_LANG_MODULE['settings_image_updated'] = 'Billede blev uploadet og opdateret';
+$_COS_LANG_MODULE['settings_image_deleted'] = 'Billede blev slettet';

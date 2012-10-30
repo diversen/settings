@@ -16,7 +16,7 @@ if (isset($_POST['css'])){
     if (empty($t->errors)){
         $t->updateCss();
         session::setActionMessage(lang::translate('settings_css_updated'));
-        header( 'Location: /settings/template/css' );
+        http::locationHeader('/settings/template/css');
     }
 } else {
     view_update_css($values);

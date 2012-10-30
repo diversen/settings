@@ -192,11 +192,14 @@ class image_form {
                 }
             } else {
                 $image->updateFile($options['filename']);
+                session::setActionMessage(lang::translate('settings_image_updated'));
+               
                 http::locationHeader( $options['redirect'] );
             }    
         } else if (!empty($_POST['delete'])){
             $image->unlinkFile($options['save_path']);
             $image->deleteFileFromDb();
+            session::setActionMessage(lang::translate('settings_image_deleted'));
             http::locationHeader( $options['redirect']);
         } else {
             view_image_form_upload($options);

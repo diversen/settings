@@ -17,6 +17,7 @@ $menu->validateOrder();
 if (empty($menu->error) && isset($_POST['submit'])){
     $menu->updateMenuList();
     header( 'Location: /settings/menu/order' );
+    exit;
 }
 
 if (isset($_POST['order'])){

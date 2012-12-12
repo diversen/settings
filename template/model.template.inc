@@ -64,14 +64,12 @@ class templateManip extends db {
      * @return boolean  true on success or false on failure
      */
     public function updateTemplate (){
-        try {
-            $values = 
-                array('template'=> $_POST['template'], 'css' => NULL);
-            $res = $this->update('settings', $values, 1);
-            return $res;
-        } catch (PDOException $e) {
-            $this->fatalError($e->getMessage());
-        }
+
+        $values = 
+            array('template'=> $_POST['template'], 'css' => NULL);
+        $res = $this->update('settings', $values, 1);
+        return $res;
+
     }
 
 

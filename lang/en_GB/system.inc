@@ -17,3 +17,8 @@ $_COS_LANG_MODULE['settings_menu_favicon'] = 'Favicon';
 
 $_COS_LANG_MODULE['settings_meta_title'] = 'Meta tags';
 
+
+$_COS_LANG_MODULE['settings: menu mail system mail'] = 'System mail';
+$_COS_LANG_MODULE['settings: menu mail method'] = 'Mail method';
+$_COS_LANG_MODULE['settings: menu mail params'] = 'Mail params';
+$_COS_LANG_MODULE['settings_mail'] = 'Mail';

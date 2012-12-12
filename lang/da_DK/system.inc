@@ -25,3 +25,10 @@ $_COS_LANG_MODULE['settings_menu_favicon'] = 'Favicon';
 
 $_COS_LANG_MODULE['settings_meta_title'] = 'Meta';
 
+
+$_COS_LANG_MODULE['settings: menu mail system mail'] = 'System email';
+$_COS_LANG_MODULE['settings: menu mail method'] = 'Mail metode';
+$_COS_LANG_MODULE['settings: menu mail params'] = 'Indstil mail metode';
+
+$_COS_LANG_MODULE['settings_mail'] = 'Mail';
+

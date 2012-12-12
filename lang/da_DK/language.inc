@@ -68,3 +68,26 @@ $_COS_LANG_MODULE['settings_meta_updated_action'] = 'Meta tags opdateret';
 
 $_COS_LANG_MODULE['settings_image_updated'] = 'Billede blev uploadet og opdateret';
 $_COS_LANG_MODULE['settings_image_deleted'] = 'Billede blev slettet';
+
+$_COS_LANG_MODULE['settings: action message: site email updated'] = 'Site email er opdateret';
+$_COS_LANG_MODULE['settings: action message: mail method updated'] = 'Mail metode er opdateret';
+$_COS_LANG_MODULE['settings: mail current method is'] = 'Nuværende mail metode er: ';
+$_COS_LANG_MODULE['settings: action message: smtp updated'] = 'SMTP indstillinger blev opdateret';
+$_COS_LANG_MODULE['settings: action message: sendmail updated'] = 'Sendmail indstilling blev opdateret';
+$_COS_LANG_MODULE['settings: error: not a valid mail method'] = 'Ingen gyldig mail metode';
+$_COS_LANG_MODULE['settings: error: all smtp params needs to be set'] = 'Alle SMTP indstillinger skal angives';
+$_COS_LANG_MODULE['settings: mail label type'] = 'Mail metode';
+$_COS_LANG_MODULE['settings: mail smtp legend'] = 'Indstil SMTP';
+$_COS_LANG_MODULE['settings: label mail smtp host'] = 'Host';
+$_COS_LANG_MODULE['settings: label mail smtp port'] = 'Port';
+$_COS_LANG_MODULE['settings: label mail smtp username'] = 'Brugernavn';
+$_COS_LANG_MODULE['settings: label mail smtp password'] = 'Password';
+$_COS_LANG_MODULE['settings: label mail smtp auth'] = 'Auth (som regel true eller false) - men kan også være fx login';
+$_COS_LANG_MODULE['settings: label mail sendmail path'] = 'Sti til sendmail program';
+$_COS_LANG_MODULE['settings: label mail sendmail args'] = 'Argumenter til sendmail';
+$_COS_LANG_MODULE['settings: mail php legend'] = 'Indtil PHP mail function';
+$_COS_LANG_MODULE['settings: label mail php params'] = 'Angiv parameter til mail function';
+$_COS_LANG_MODULE['settings: mail email system legend'] = 'Indstil system email';
+$_COS_LANG_MODULE['settings: label mail system site email'] = 'System email, primært email adresse';
+
+$_COS_LANG_MODULE['settings: mail method legend'] = 'Vælg mail metode';

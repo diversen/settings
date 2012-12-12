@@ -89,3 +89,25 @@ $_COS_LANG_MODULE['settings_meta_updated_action'] = 'Robot visibility updated';
 
 $_COS_LANG_MODULE['settings_image_updated'] = 'Image uploaded and updated';
 $_COS_LANG_MODULE['settings_image_deleted'] = 'Image deleted';
+
+$_COS_LANG_MODULE['settings: action message: site email updated'] = 'System email has been updated';
+$_COS_LANG_MODULE['settings: action message: mail method updated'] = 'Mail method updated';
+$_COS_LANG_MODULE['settings: mail current method is'] = 'Current mail method is: ';
+$_COS_LANG_MODULE['settings: action message: smtp updated'] = 'SMTP settings updated';
+$_COS_LANG_MODULE['settings: action message: sendmail updated'] = 'Sendmail settings updated';
+$_COS_LANG_MODULE['settings: error: not a valid mail method'] = 'Not a valid mail method';
+$_COS_LANG_MODULE['settings: error: all smtp params needs to be set'] = 'All SMTP params needs to be set';
+$_COS_LANG_MODULE['settings: mail method legend'] = 'Set system mail method';
+$_COS_LANG_MODULE['settings: mail label type'] = 'Choose method - needs to be supported by your system';
+$_COS_LANG_MODULE['settings: mail smtp legend'] = 'SMTP settings';
+$_COS_LANG_MODULE['settings: label mail smtp host'] = 'Host';
+$_COS_LANG_MODULE['settings: label mail smtp port'] = 'Port';
+$_COS_LANG_MODULE['settings: label mail smtp username'] = 'Username';
+$_COS_LANG_MODULE['settings: label mail smtp password'] = 'Password';
+$_COS_LANG_MODULE['settings: label mail smtp auth'] = "Auth (true or false) - but can also be e.g. login";
+$_COS_LANG_MODULE['settings: label mail sendmail path'] = 'Path to sendmail';
+$_COS_LANG_MODULE['settings: label mail sendmail args'] = 'Args to sendmail';
+$_COS_LANG_MODULE['settings: mail php legend'] = "Set PHP mail settings - often you don't need to do anything";
+$_COS_LANG_MODULE['settings: label mail php params'] = 'PHP mail function params';
+$_COS_LANG_MODULE['settings: mail email system legend'] = 'Set system email';
+$_COS_LANG_MODULE['settings: label mail system site email'] = 'Set system email';

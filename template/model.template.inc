@@ -94,7 +94,7 @@ class templateManip extends db {
      * @return array values for populating dropdown function view_drop_down
      */
     public static function getTemplates(){
-        $template_path = _COS_PATH . '/htdocs/templates';
+        $template_path = _COS_HTDOCS . '/templates';
         $rows = array();
                 
         // TODO: speed up
@@ -120,7 +120,7 @@ class templateManip extends db {
         $row = self::getTemplate();
         $template = $row['template'];
 
-        $template_path = _COS_PATH . "/htdocs/templates/$template";
+        $template_path = _COS_HTDOCS . "/templates/$template";
         $dir = dir($template_path);
         $rows = array();
         while (false !== ($entry = $dir->read())) {

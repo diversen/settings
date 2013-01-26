@@ -10,7 +10,7 @@ if (!session::checkAccessControl('settings_allow_edit')){
     return;
 }
 
-include_module('settings');
+moduleloader::includeModule('settings');
 $options = array (
     'page_title' => lang::translate('settings_favicon_title'), 
     'redirect' => '/settings/favicon/index', 

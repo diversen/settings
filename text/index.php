@@ -11,9 +11,9 @@ if (isset($_POST['submit'])){
     if ($settings->validate()){
 
         $settings->updateText();
-        view_confirm(lang::translate('New settings has been saved'));
+        html::confirm(lang::translate('New settings has been saved'));
     } else {
-        view_form_errors($settings->errors);
+        html::errors($settings->errors);
         view_update_text();
     }
 } else {

@@ -29,7 +29,7 @@ if ($method == 'smtp') {
                 http::locationHeader('/settings/mail/params', $message);
             }
         } else {
-            view_form_errors($m->errors);
+            html::errors($m->errors);
         }
     }
     $m->mailFormSMTP();

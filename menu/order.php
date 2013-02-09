@@ -22,7 +22,7 @@ if (empty($menu->error) && isset($_POST['submit'])){
 
 if (isset($_POST['order'])){
     if(isset($menu->error)){
-        view_form_errors($menu->error);
+        html::errors($menu->error);
     }
 }
 view_order_list($list);

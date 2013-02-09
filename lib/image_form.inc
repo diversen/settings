@@ -185,7 +185,7 @@ class image_form {
         $image = new image_form($options);
         if (!empty($_POST['submit'])){
             if (!$image->moveFile($options['filename'], $options['save_path'])){
-                view_form_errors($image->errors);
+                html::errors($image->errors);
                 view_image_form_upload($options);
                 if ($image->getFile($options['save_path'])){
                     view_image_form_delete($options);

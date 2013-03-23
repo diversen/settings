@@ -1,5 +1,7 @@
 <?php
 
+http::prg();
+
 if (!session::checkAccessControl('settings_allow_edit')){
     return;
 }

@@ -1,5 +1,6 @@
 <?php
 
+http::prg();
 /**
  * controller file settings/logo/index
  *

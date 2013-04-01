@@ -24,7 +24,7 @@ if (config::getModuleIni('settings_allow_email')) {
     );
 }
 
-$_INSTALL['VERSION'] = 1.81;
+$_INSTALL['VERSION'] = 2.1;
 
 $_INSTALL['PUBLIC_CLONE_URL'] = 'git://github.com/diversen/settings.git';
 $_INSTALL['PRIVATE_CLONE_URL'] = 'git@github.com:diversen/settings.git';

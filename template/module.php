@@ -5,7 +5,7 @@
  *
  * @package settings
  */
-
+view::includeOverrideFunctions('settings', 'template/views.php' );
  /**
   * template class
   *

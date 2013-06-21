@@ -5,7 +5,7 @@ if (!session::checkAccessControl('settings_allow_edit')){
 }
 
 template::setTitle(lang::translate('Set Misc Settings'));
-$settings = new settings();
+$settings = new settings_text();
 if (isset($_POST['submit'])){
     
     if ($settings->validate()){

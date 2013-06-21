@@ -11,7 +11,7 @@
  *
  * @package settings
  */
-class settings extends db {
+class settings_text extends db {
 
     /**
      *

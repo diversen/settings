@@ -5,7 +5,7 @@
  */
 include_once config::getModulePath('settings') . "/lib/image_form.inc";
 
-class favicon extends image_form {
+class settings_favicon extends image_form {
     
     
 }

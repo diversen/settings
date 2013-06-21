@@ -12,7 +12,7 @@ if (!session::checkAccessControl('settings_allow_edit')){
 
 if (isset($_POST)) $_POST = html::specialEncode ($_POST);
 
-$mod = new menus();
+$mod = new settings_menu();
 template::setTitle(lang::translate('Menus'));
 $mod->getAllMenuModules();
 $enabled = $mod->getEnabledModules();

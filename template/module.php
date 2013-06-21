@@ -11,7 +11,7 @@
   *
   * @package    settings
   */
-class templateManip extends db {
+class settings_template extends db {
 
     /**
      *

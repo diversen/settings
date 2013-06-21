@@ -17,7 +17,7 @@ $method = config::getMainIni('mail_method');
 //echo lang::translate('settings: mail current method is') . " ";
 //echo $method;
 
-$m = new settingsMail();
+$m = new settings_mail();
 
 if ($method == 'smtp') { 
     if (isset($_POST['smtp_submit'])) {

@@ -10,7 +10,7 @@ template::setTitle(lang::translate('Edit Template Css'));
 
 if (isset($_POST)) $_POST = html::specialEncode ($_POST);
 
-$t = new templateManip();
+$t = new settings_template();
 $values = $t->getCss('update');
 
 if (isset($_POST['css'])){

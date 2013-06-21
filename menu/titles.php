@@ -6,7 +6,7 @@ if (!session::checkAccessControl('settings_allow_edit')){
 
 settings_view_titles();
 if (isset($_POST['submit'])){
-    $menu = new menus();
+    $menu = new settings_menu();
     $menu->updateMenuTitles ();
     session::setActionMessage(lang::translate('settings_menu_titles_updated'));
     header("Location: /settings/menu/titles");

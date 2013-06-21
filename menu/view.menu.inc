@@ -124,7 +124,7 @@ function view_core ($menus){ ?>
 
 function settings_view_titles (){
 
-    $menu = new menus();
+    $menu = new settings_menu();
     $menus = $menu->getMenuList();
 
     view_form_start(lang::translate('settings_menu_set_main_titles'));

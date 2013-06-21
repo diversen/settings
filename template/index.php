@@ -8,7 +8,7 @@ if (!session::checkAccessControl('settings_allow_edit')){
 
 template::setTitle(lang::translate('Edit Template'));
 
-$t = new templateManip();
+$t = new settings_template();
 $values = $t->getTemplate('update');
 
 if (isset($_POST)) $_POST = html::specialEncode ($_POST);

@@ -1,6 +1,6 @@
 <?php
 
-class settingsMail {
+class settings_mail {
     
     public $errors = array (); 
     public function validateMethod () {

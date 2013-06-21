@@ -11,7 +11,7 @@ if (!session::checkAccessControl('settings_allow_edit')) {
 
 layout::disableMainModuleMenu();
 
-$m = new settingsMail();
+$m = new settings_mail();
 if (isset($_POST['site_email_submit'])) {
     if (empty($m->errors)) {
         $res = $m->updateSiteEmail();

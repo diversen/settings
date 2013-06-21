@@ -10,7 +10,7 @@ if (!session::checkAccessControl('settings_allow_edit')){
 }
 
 template::setTitle(lang::translate('Menu Order'));
-$menu = new menus();
+$menu = new settings_menu();
 $list = $menu->getMenuList();
 
 $menu->validateOrder();

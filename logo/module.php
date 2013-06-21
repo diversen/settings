@@ -15,6 +15,6 @@ include_once config::getModulePath('settings') . "/lib/image_form.inc";
  *
  * @package     settings
  */
-class logo extends image_form {
+class settings_logo extends image_form {
 
 }

@@ -12,7 +12,7 @@
   *
   * @package    settings
   */
-class menus extends db {
+class settings_menu extends db {
 
     /**
      *

@@ -21,7 +21,7 @@ if (isset($_POST['css'])){
         http::locationHeader('/settings/template/css');
     }
 } else {
-    view_update_css($values);
+    settings_update_css($values);
     $t->getCss();
 }
 

@@ -20,6 +20,6 @@ if (isset($_POST['template'])){
         http::locationHeader('/settings/template/index' );
     } 
 } else {
-    view_update_template($values);
+    settings_template($values);
     $t->getTemplates();  
 }

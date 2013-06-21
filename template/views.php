@@ -10,7 +10,7 @@
   * function for viewing update form
   * @param  array  values  for usage in select drop down
   */
-function view_update_template ($values = NULL){
+function settings_template ($values = NULL){
 
     if (!empty($_POST['submit'])){
         $values['template'] = $_POST['template'];
@@ -34,7 +34,7 @@ function view_update_template ($values = NULL){
   * function for viewing update form
   * @param  array  values  for usage in select drop down
   */
-function view_update_css ($values = NULL){
+function settings_update_css ($values = NULL){
 
     if (isset($_POST['css'])){
         $values['css'] = $_POST['css'];

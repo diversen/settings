@@ -31,4 +31,3 @@ $_COS_LANG_MODULE['settings: menu mail method'] = 'Mail metode';
 $_COS_LANG_MODULE['settings: menu mail params'] = 'Indstil mail metode';
 
 $_COS_LANG_MODULE['settings_mail'] = 'Mail';
-

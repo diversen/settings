@@ -35,7 +35,7 @@ $_COS_LANG_MODULE['Template Updated'] = 'Template Updated';
 $_COS_LANG_MODULE['Edit Template'] = 'Edit Template';
 $_COS_LANG_MODULE['Select template'] = 'Select template';
 
-$_COS_LANG_MODULE['$_MAIN_MENU_ITEM not defined in: '] = '$_MAIN_MENU_ITEM not defined in: ';
+$_COS_LANG_MODULE['$_MAIN_MENU_ITEM not defined in: '] = '<span class="notranslate">$_MAIN_MENU_ITEM</span> not defined in: ';
 $_COS_LANG_MODULE['Main Menu'] = 'Main Menu';
 $_COS_LANG_MODULE['Delete Logo'] = 'Delete Logo';
 $_COS_LANG_MODULE['Delete Current Logo'] = 'Delete Current Logo';
@@ -46,7 +46,7 @@ $_COS_LANG_MODULE['Description'] = 'Description';
 $_COS_LANG_MODULE['Template Style'] = 'Template Style';
 
 $_COS_LANG_MODULE['Submit'] = 'Submit';
-$_COS_LANG_MODULE['Unenabled Menus. Check to enable'] = 'Unenabled Menus. Check to enable';
+$_COS_LANG_MODULE['Not enabled Menus. Check the box to enable'] = 'Not enabled Menus. Check the box to enable';
 $_COS_LANG_MODULE['Submit'] = 'Submit';
 $_COS_LANG_MODULE['Enabled Menus. Check to disable'] = 'Enabled Menus. Check to disable';
 $_COS_LANG_MODULE['Submit'] = 'Submit';

@@ -49,36 +49,6 @@ function view_order_list($menus){
 }
 
 /**
- * function to enable menu entries
- *
- * @param   array menus
- * @return  void
- */
-function view_enable_list($menus){
-    if (empty($menus)){
-        return;
-    }?>
-
-<div id="form_main">
-<form method="post" action="">
-<fieldset>
-<legend><?php echo lang::translate('Unenabled Menus. Check to enable')?></legend>
-<table>
-<?php
-    foreach ($menus as $key => $value){ ?>
-        <tr>
-        <td><?php echo $value?></td><td><input type="checkbox" name="enable[<?php echo $value?>]" value="1"></td>
-        </tr><?php
-    } ?>
-<tr><td><input type="submit" name="submit" value="<?php echo lang::translate('Submit')?>"></td></tr>
-</table>
-</fieldset>
-</form>
-</div><?php
-
-}
-
-/**
  * function for disabling menus (unused for now
  *
  * @param   array     menus

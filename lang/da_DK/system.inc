@@ -10,7 +10,7 @@ $_COS_LANG_MODULE['settings'] = 'Indstillinger';
 
 $_COS_LANG_MODULE['settings_menu_title'] = 'Titler';
 
-$_COS_LANG_MODULE['Unenabled Menus. Check to enable'] = 'Unenabled Menus. Check to enable';
+$_COS_LANG_MODULE['Not enabled Menus. Check the box to enable'] = 'Not enabled Menus. Check the box to enable';
 $_COS_LANG_MODULE['Enabled Menus. Check to disable'] = 'Enabled Menus. Check to disable';
 $_COS_LANG_MODULE['Submit'] = 'Send';
 $_COS_LANG_MODULE['Core menus'] = 'Core menus';

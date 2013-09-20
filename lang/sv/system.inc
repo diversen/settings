@@ -1,13 +1,19 @@
 <?php
 
-$_COS_LANG_MODULE['Settings'] = 'Inställningar';
-$_COS_LANG_MODULE['settings'] = 'Inställningar';
-$_COS_LANG_MODULE['settings_menu_title'] = 'Huvudmeny titel';
-$_COS_LANG_MODULE['settings_menu_set_main_titles'] = 'Redigera huvudmenyn titlar';
-$_COS_LANG_MODULE['settings_looks'] = 'Mall och logotyp';
+$_COS_LANG_MODULE['Settings'] = 'Indstillinger';
+$_COS_LANG_MODULE['settings'] = 'Indstillinger';
+$_COS_LANG_MODULE['settings_menu_title'] = 'Titler';
+$_COS_LANG_MODULE['Not enabled Menus. Check the box to enable'] = 'Not enabled Menus. Check the box to enable';
+$_COS_LANG_MODULE['Enabled Menus. Check to disable'] = 'Enabled Menus. Check to disable';
+$_COS_LANG_MODULE['Submit'] = 'Send';
+$_COS_LANG_MODULE['Core menus'] = 'Core menus';
+$_COS_LANG_MODULE['settings_menu_set_main_titles'] = 'Vælg menu titler';
+$_COS_LANG_MODULE['Update'] = 'Update';
+$_COS_LANG_MODULE['Template Style'] = 'Template Style';
+$_COS_LANG_MODULE['settings_looks'] = 'Template og Logo';
 $_COS_LANG_MODULE['settings_menu_favicon'] = 'Favicon';
-$_COS_LANG_MODULE['settings_meta_title'] = 'Metataggar';
-$_COS_LANG_MODULE['settings: menu mail system mail'] = 'System post';
-$_COS_LANG_MODULE['settings: menu mail method'] = 'Mail metod';
-$_COS_LANG_MODULE['settings: menu mail params'] = 'Mail params';
+$_COS_LANG_MODULE['settings_meta_title'] = 'Meta';
+$_COS_LANG_MODULE['settings: menu mail system mail'] = 'System email';
+$_COS_LANG_MODULE['settings: menu mail method'] = 'Mail metode';
+$_COS_LANG_MODULE['settings: menu mail params'] = 'Indstil mail metode';
 $_COS_LANG_MODULE['settings_mail'] = 'Mail';

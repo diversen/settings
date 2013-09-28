@@ -26,6 +26,11 @@ $_COS_LANG_MODULE['settings: menu mail system mail'] = 'System email';
 $_COS_LANG_MODULE['settings: menu mail method'] = 'Mail metode';
 $_COS_LANG_MODULE['settings: menu mail params'] = 'Indstil mail metode';
 
+// Translation of file /modules/settings/install.inc
+
+$_COS_LANG_MODULE['settings_looks'] = 'Template';
+$_COS_LANG_MODULE['settings_mail'] = 'Mail';
+
 // Translation of file /modules/settings/menu.inc
 
 $_COS_LANG_MODULE['Change Logo'] = 'Logo';

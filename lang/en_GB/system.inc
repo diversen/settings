@@ -8,8 +8,8 @@ $_COS_LANG_MODULE['Template Style'] = 'Template Style';
 
 // Translation of file /modules/settings/install.inc
 
-$_COS_LANG_MODULE['settings_looks'] = 'Template And Logo';
-$_COS_LANG_MODULE['settings_mail'] = 'Mail';
+$_COS_LANG_MODULE['Menu: settings_looks'] = 'Template and Css';
+$_COS_LANG_MODULE['Menu: settings_mail'] = 'Mail';
 
 // Translation of file /modules/settings/menu/view.menu.inc
 

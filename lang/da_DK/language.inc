@@ -37,7 +37,6 @@ $_COS_LANG_MODULE['Menu Order'] = 'Menu rækkefølge';
 // Translation of file /modules/settings/index.php
 
 $_COS_LANG_MODULE['Site Settings'] = 'Webside Indstillinger';
-$_COS_LANG_MODULE["Sentence with a strange char 'this'"] = "Sætning med en mærkelig char 'dette'";
 
 // Translation of file /modules/settings/favicon/index.php
 

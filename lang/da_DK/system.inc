@@ -8,15 +8,15 @@ $_COS_LANG_MODULE['Template Style'] = 'Template Style';
 
 // Translation of file /modules/settings/install.inc
 
-$_COS_LANG_MODULE['settings_looks'] = 'Template';
-$_COS_LANG_MODULE['settings_mail'] = 'Mail';
+$_COS_LANG_MODULE['Menu: settings_looks'] = 'Skabelon og Css';
+$_COS_LANG_MODULE['Menu: settings_mail'] = 'Mail';
 
 // Translation of file /modules/settings/menu/view.menu.inc
 
 $_COS_LANG_MODULE['Determine order of menus'] = 'Ret menuer';
 $_COS_LANG_MODULE['Submit'] = 'Send';
-$_COS_LANG_MODULE['Enabled Menus. Check to disable'] = 'Enabled Menus. Check to disable';
-$_COS_LANG_MODULE['Core menus'] = 'Core menus';
+$_COS_LANG_MODULE['Enabled Menus. Check to disable'] = 'Aktiverede menuer. Lad være menupunktet være tomt for at aktivere';
+$_COS_LANG_MODULE['Core menus'] = 'Primære menuer';
 $_COS_LANG_MODULE['settings_menu_set_main_titles'] = 'Vælg menu titler';
 $_COS_LANG_MODULE['Update'] = 'Opdater';
 

@@ -5,4 +5,4 @@ if (!session::checkAccessControl('settings_allow_edit')){
 }
 
 template::setTitle(lang::translate('Site Settings'));
-print lang::translate('Site Settings');
+echo lang::translate('Site Settings');

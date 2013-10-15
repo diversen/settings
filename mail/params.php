@@ -5,7 +5,7 @@ if (!config::getModuleIni('settings_allow_email')) {
     return;
 }
 
-if (!session::checkAccessControl('settings_allow_edit')) {
+if (!session::checkAccessFromModuleIni('settings_allow_edit')) {
     return;
 }
 

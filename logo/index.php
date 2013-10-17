@@ -7,7 +7,7 @@
  * @package     settings
  */
 
-if (!session::checkAccessControl('settings_allow_edit')){
+if (!session::checkAccessFromModuleIni('settings_allow_edit')){
     return;
 }
 

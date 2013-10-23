@@ -16,3 +16,4 @@ This is also added to the 'settings' menu
     ; may above user change default email settings
     settings_allow_email = 0
 
+

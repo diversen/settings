@@ -1,6 +1,6 @@
 <?php
 
-$_COS_LANG_MODULE['Edit Template Css'] = 'Sylesheet';
+$_COS_LANG_MODULE['Edit Template Css'] = 'Stylesheet';
 $_COS_LANG_MODULE['settings_css_updated'] = 'Stylesheet updated';
 $_COS_LANG_MODULE['Edit Template'] = 'Edit Template';
 $_COS_LANG_MODULE['settings_template_updated'] = 'Template updated';

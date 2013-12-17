@@ -1,5 +1,6 @@
 <?php
 
+$_COS_LANG_MODULE['Edit Template Css'] = '样式表';
 $_COS_LANG_MODULE['settings_css_updated'] = '样式表更新';
 $_COS_LANG_MODULE['Edit Template'] = '编辑模板';
 $_COS_LANG_MODULE['settings_template_updated'] = '模板更新';

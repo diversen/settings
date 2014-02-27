@@ -18,19 +18,25 @@ $_COS_LANG_MODULE['Select Stylesheet'] = 'Select Stylesheet';
 
 $_COS_LANG_MODULE['settings_template_updated'] = 'Template updated';
 
-// Translation of file /modules/settings/background/index.php
+// Translation of file /modules/settings/menu/module.php
 
-$_COS_LANG_MODULE['settings_favicon_title'] = 'Favicon';
+$_COS_LANG_MODULE['Only unique values allowed for every menu item'] = 'Only unique values allowed for every menu item';
 
-// Translation of file /modules/settings/mail/params.php
+// Translation of file /modules/settings/menu/order.php
 
-$_COS_LANG_MODULE['settings: mail current method is'] = 'Current mail method is: ';
-$_COS_LANG_MODULE['settings: action message: smtp updated'] = 'SMTP settings updated';
-$_COS_LANG_MODULE['settings: action message: sendmail updated'] = 'Sendmail settings updated';
+$_COS_LANG_MODULE['Menu Order'] = 'Menu Order';
 
-// Translation of file /modules/settings/mail/index.php
+// Translation of file /modules/settings/menu/titles.php
 
-$_COS_LANG_MODULE['settings: action message: mail method updated'] = 'Mail method updated';
+$_COS_LANG_MODULE['settings_menu_titles_updated'] = 'Menu titles has been updated';
+
+// Translation of file /modules/settings/menu/index.php
+
+$_COS_LANG_MODULE['Menus'] = 'Menus';
+
+// Translation of file /modules/settings/mail/system.php
+
+$_COS_LANG_MODULE['settings: action message: site email updated'] = 'System email has been updated';
 
 // Translation of file /modules/settings/mail/module.php
 
@@ -51,35 +57,20 @@ $_COS_LANG_MODULE['settings: label mail php params'] = 'PHP mail function params
 $_COS_LANG_MODULE['settings: mail email system legend'] = 'Set system email';
 $_COS_LANG_MODULE['settings: label mail system site email'] = 'Set system email';
 
-// Translation of file /modules/settings/mail/system.php
+// Translation of file /modules/settings/mail/params.php
 
-$_COS_LANG_MODULE['settings: action message: site email updated'] = 'System email has been updated';
+$_COS_LANG_MODULE['settings: mail current method is'] = 'Current mail method is: ';
+$_COS_LANG_MODULE['settings: action message: smtp updated'] = 'SMTP settings updated';
+$_COS_LANG_MODULE['settings: action message: sendmail updated'] = 'Sendmail settings updated';
 
-// Translation of file /modules/settings/menu/order.php
+// Translation of file /modules/settings/mail/index.php
 
-$_COS_LANG_MODULE['Menu Order'] = 'Menu Order';
+$_COS_LANG_MODULE['settings: action message: mail method updated'] = 'Mail method updated';
 
-// Translation of file /modules/settings/menu/titles.php
+// Translation of file /modules/settings/text/index.php
 
-$_COS_LANG_MODULE['settings_menu_titles_updated'] = 'Menu titles has been updated';
-
-// Translation of file /modules/settings/menu/index.php
-
-$_COS_LANG_MODULE['Menus'] = 'Menus';
-
-// Translation of file /modules/settings/menu/module.php
-
-$_COS_LANG_MODULE['Only unique values allowed for every menu item'] = 'Only unique values allowed for every menu item';
-
-// Translation of file /modules/settings/lib/image_form.inc
-
-$_COS_LANG_MODULE['settings_upload_no_file_specified'] = 'Please select a file';
-$_COS_LANG_MODULE['settings_upload_wrong_filetype_specified'] = 'Wrong file type. Only these are allowed: ';
-$_COS_LANG_MODULE['Edit Logo'] = 'Edit Logo';
-$_COS_LANG_MODULE['settings_image_updated'] = 'Image uploaded and updated';
-$_COS_LANG_MODULE['settings_image_deleted'] = 'Image deleted';
-$_COS_LANG_MODULE['settings_label_file'] = 'File';
-$_COS_LANG_MODULE['settings_legend_delete'] = 'Delete file';
+$_COS_LANG_MODULE['Set Misc Settings'] = 'Set Misc Settings';
+$_COS_LANG_MODULE['New settings has been saved'] = 'New settings has been saved';
 
 // Translation of file /modules/settings/text/view.text.inc
 
@@ -87,16 +78,26 @@ $_COS_LANG_MODULE['Edit Misc Settings'] = 'Edit Misc Settings';
 $_COS_LANG_MODULE['Footer Message'] = 'Footer Message';
 $_COS_LANG_MODULE['Description'] = 'Description';
 
-// Translation of file /modules/settings/text/index.php
-
-$_COS_LANG_MODULE['Set Misc Settings'] = 'Set Misc Settings';
-$_COS_LANG_MODULE['New settings has been saved'] = 'New settings has been saved';
-
 // Translation of file /modules/settings/logo/index.php
 
+$_COS_LANG_MODULE['Edit Logo'] = 'Edit Logo';
+
+// Translation of file /modules/settings/background/index.php
+
+$_COS_LANG_MODULE['settings_favicon_title'] = 'Favicon';
+
+// Translation of file /modules/settings/favicon/index.php
+
+
+// Translation of file /modules/settings/lib/image_form.inc
+
+$_COS_LANG_MODULE['settings_upload_no_file_specified'] = 'Please select a file';
+$_COS_LANG_MODULE['settings_upload_wrong_filetype_specified'] = 'Wrong file type. Only these are allowed: ';
+$_COS_LANG_MODULE['settings_image_updated'] = 'Image uploaded and updated';
+$_COS_LANG_MODULE['settings_image_deleted'] = 'Image deleted';
+$_COS_LANG_MODULE['settings_label_file'] = 'File';
+$_COS_LANG_MODULE['settings_legend_delete'] = 'Delete file';
 
 // Translation of file /modules/settings/index.php
 
 $_COS_LANG_MODULE['Site Settings'] = 'Site Settings';
-
-// Translation of file /modules/settings/favicon/index.php

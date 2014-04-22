@@ -3,7 +3,7 @@
 $_INSTALL['MAIN_MENU_ITEMS'][] = array (
     'title' => lang::translate('Menu: settings_looks', null ,array ('no_translate' => true)),
     'url' => '/settings/index',
-    'auth' => 'admin',
+    'auth' => config::getModuleIni('settings_allow_edit'),
     'module_name' => 'settings',
     'parent' => 0,
     'weight' => 3,
@@ -15,7 +15,7 @@ if (config::getModuleIni('settings_allow_email')) {
     $_INSTALL['MAIN_MENU_ITEMS'][] = array (
         'title' => lang::translate('Menu: settings_mail', null ,array ('no_translate' => true)),
         'url' => '/settings/mail/index',
-        'auth' => 'admin',
+    'auth' => config::getModuleIni('settings_allow_edit'),
         'module_name' => 'settings',
         'parent' => 0,
         'weight' => 3,

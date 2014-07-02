@@ -22,7 +22,13 @@ if (isset($_POST['template'])){
         session::setActionMessage(lang::translate('settings_template_updated'));
         http::locationHeader('/settings/template/index');
     } 
-} else {
-    settings_template($values);
-    $t->getTemplates();  
 }
+
+if (!empty($t->errors)){
+
+        echo html::getErrors($t->errors);
+
+    }
+            settings_template($values);
+        $t->getTemplates(); 
+        return;

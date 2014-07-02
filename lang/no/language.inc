@@ -2,6 +2,7 @@
 
 $_COS_LANG_MODULE['Edit Template Css'] = 'Stilark';
 $_COS_LANG_MODULE['settings_css_updated'] = 'Stilark oppdatert';
+$_COS_LANG_MODULE['Select a template'] = 'Velg en mal';
 $_COS_LANG_MODULE['Edit Template'] = 'Rediger mal';
 $_COS_LANG_MODULE['Select template'] = 'Velg en mal';
 $_COS_LANG_MODULE['Update'] = 'Refresh';

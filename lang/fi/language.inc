@@ -2,6 +2,7 @@
 
 $_COS_LANG_MODULE['Edit Template Css'] = 'Tyylitaulukkoja';
 $_COS_LANG_MODULE['settings_css_updated'] = 'Tyylitaulukkoja päivitetty';
+$_COS_LANG_MODULE['Select a template'] = 'Valitse malli';
 $_COS_LANG_MODULE['Edit Template'] = 'Muokkaa mallia';
 $_COS_LANG_MODULE['Select template'] = 'Valitse malli';
 $_COS_LANG_MODULE['Update'] = 'Virkistää';

@@ -2,6 +2,7 @@
 
 $_COS_LANG_MODULE['Edit Template Css'] = '样式表';
 $_COS_LANG_MODULE['settings_css_updated'] = '样式表更新';
+$_COS_LANG_MODULE['Select a template'] = '选择模板';
 $_COS_LANG_MODULE['Edit Template'] = '编辑模板';
 $_COS_LANG_MODULE['Select template'] = '选择模板';
 $_COS_LANG_MODULE['Update'] = '更新';

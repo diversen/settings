@@ -2,6 +2,7 @@
 
 $_COS_LANG_MODULE['Edit Template Css'] = 'Stylesheet';
 $_COS_LANG_MODULE['settings_css_updated'] = 'Stylesheet aktualisiert';
+$_COS_LANG_MODULE['Select a template'] = 'Wählen Sie eine Vorlage';
 $_COS_LANG_MODULE['Edit Template'] = 'Template Edit';
 $_COS_LANG_MODULE['Select template'] = 'Template wählen';
 $_COS_LANG_MODULE['Update'] = 'Aktualisierung';

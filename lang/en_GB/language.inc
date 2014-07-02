@@ -6,6 +6,10 @@
 $_COS_LANG_MODULE['Edit Template Css'] = 'Stylesheet';
 $_COS_LANG_MODULE['settings_css_updated'] = 'Stylesheet updated';
 
+// Translation of file /modules/settings/template/module.php
+
+$_COS_LANG_MODULE['Select a template'] = 'Select a template';
+
 // Translation of file /modules/settings/template/views.php
 
 $_COS_LANG_MODULE['Edit Template'] = 'Edit Template';

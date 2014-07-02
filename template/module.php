@@ -54,7 +54,10 @@ class settings_template extends db {
      * Validate user input
      */
     public function validateTemplate(){
-
+        if ($_POST['template'] == '0') {
+            $this->errors[] = lang::translate('Select a template');
+            return;
+        }
     }
 
 

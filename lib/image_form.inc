@@ -88,13 +88,16 @@ class image_form {
      * @return int $int 1 on success and 0 on failure 
      */
     public function moveFile($filename = 'logo', $path = '/logo'){
+
         if(empty($_FILES[$filename]['name'])) {
             $this->errors[] = lang::translate('settings_upload_no_file_specified');
             return false;
         }
         
-        $valid_types = $this->getValidMimeTypes ();//array ();
-        if (!in_array($_FILES[$filename]['type'], $valid_types)) {
+        $valid_types = $this->getValidMimeTypes ();
+        
+        $mime = file::getMime($_FILES[$filename]['tmp_name']);
+        if (!in_array($mime, $valid_types)) {
             $error = lang::translate('settings_upload_wrong_filetype_specified');
             $valid = array_keys($valid_types);
             $valid = implode(", ", $valid);
@@ -192,8 +195,7 @@ class image_form {
                 }
             } else {
                 $image->updateFile($options['filename']);
-                session::setActionMessage(lang::translate('settings_image_updated'));
-               
+                session::setActionMessage(lang::translate('settings_image_updated'));   
                 http::locationHeader( $options['redirect'] );
             }    
         } else if (!empty($_POST['delete'])){

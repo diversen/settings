@@ -15,6 +15,7 @@ $_COS_LANG_MODULE['settings_menu_set_main_titles'] = 'Velg Menytitlene';
 $_COS_LANG_MODULE['Update'] = 'Refresh';
 $_COS_LANG_MODULE['Menu: settings_looks'] = 'Mal og css';
 $_COS_LANG_MODULE['Menu: settings_mail'] = 'Mail';
+$_COS_LANG_MODULE['settings'] = 'Innstillinger';
 $_COS_LANG_MODULE['Change Logo'] = 'Logo';
 $_COS_LANG_MODULE['settings_menu_favicon'] = 'Favicon';
 $_COS_LANG_MODULE['Edit Template Css'] = 'Stilark';

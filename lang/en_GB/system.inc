@@ -31,6 +31,10 @@ $_COS_LANG_MODULE['Update'] = 'Update';
 $_COS_LANG_MODULE['Menu: settings_looks'] = 'Template and css';
 $_COS_LANG_MODULE['Menu: settings_mail'] = 'Mail';
 
+// Translation of file /modules/settings/system_lang.inc
+
+$_COS_LANG_MODULE['settings'] = 'Settings';
+
 // Translation of file /modules/settings/menu.inc
 
 $_COS_LANG_MODULE['Change Logo'] = 'Logo';

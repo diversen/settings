@@ -15,6 +15,7 @@ $_COS_LANG_MODULE['settings_menu_set_main_titles'] = '编辑主菜单标题';
 $_COS_LANG_MODULE['Update'] = '更新';
 $_COS_LANG_MODULE['Menu: settings_looks'] = '模板和CSS';
 $_COS_LANG_MODULE['Menu: settings_mail'] = '邮件';
+$_COS_LANG_MODULE['settings'] = '设置';
 $_COS_LANG_MODULE['Change Logo'] = '标志';
 $_COS_LANG_MODULE['settings_menu_favicon'] = '网站图标';
 $_COS_LANG_MODULE['Edit Template Css'] = 'Sylesheet';

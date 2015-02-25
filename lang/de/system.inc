@@ -15,6 +15,7 @@ $_COS_LANG_MODULE['settings_menu_set_main_titles'] = 'Bearbeiten Hauptmenü Tite
 $_COS_LANG_MODULE['Update'] = 'Aktualisierung';
 $_COS_LANG_MODULE['Menu: settings_looks'] = 'Template und CSS';
 $_COS_LANG_MODULE['Menu: settings_mail'] = 'Post';
+$_COS_LANG_MODULE['settings'] = 'Einstellungen';
 $_COS_LANG_MODULE['Change Logo'] = 'Logo';
 $_COS_LANG_MODULE['settings_menu_favicon'] = 'Favicon';
 $_COS_LANG_MODULE['Edit Template Css'] = 'Stylesheet';

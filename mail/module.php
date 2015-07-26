@@ -70,7 +70,7 @@ class settings_mail {
     
     public function mailFormMethod () {
         
-        $method = config::getMainIni('mail_method');
+        $method = conf::getMainIni('mail_method');
         
         $f = new html ();
         $f->init(null, 'mail_method_submit');
@@ -106,11 +106,11 @@ class settings_mail {
     
     public function mailFormSMTP () {
         $values = array (
-            'smtp_params_host' => config::getMainIniAsString('smtp_params_host'),
-            'smtp_params_port' => config::getMainIniAsString('smtp_params_port'),
-            'smtp_params_username' => config::getMainIniAsString('smtp_params_username'),
-            'smtp_params_password' => config::getMainIniAsString('smtp_params_password'),
-            'smtp_params_auth' => config::getMainIniAsString('smtp_params_auth')
+            'smtp_params_host' => conf::getMainIniAsString('smtp_params_host'),
+            'smtp_params_port' => conf::getMainIniAsString('smtp_params_port'),
+            'smtp_params_username' => conf::getMainIniAsString('smtp_params_username'),
+            'smtp_params_password' => conf::getMainIniAsString('smtp_params_password'),
+            'smtp_params_auth' => conf::getMainIniAsString('smtp_params_auth')
                 );
         
         $values = html::specialEncode($values);
@@ -148,8 +148,8 @@ class settings_mail {
     
     public function mailFormSendmail () {
         $values = array (
-            'sendmail_path' => config::getMainIniAsString('sendmail_path'),
-            'sendmail_args' => config::getMainIniAsString('sendmail_args')
+            'sendmail_path' => conf::getMainIniAsString('sendmail_path'),
+            'sendmail_args' => conf::getMainIniAsString('sendmail_args')
         );
         
         $values = html::specialEncode($values);
@@ -177,7 +177,7 @@ class settings_mail {
     
     public function mailFormMail () {
         $values = array (
-            'mail_params' => config::getMainIniAsString('mail_params'),
+            'mail_params' => conf::getMainIniAsString('mail_params'),
 
         );
         
@@ -205,7 +205,7 @@ class settings_mail {
     
     public function mailFormSiteEmail () {
         $values = array (
-            'site_email' => config::getMainIniAsString('site_email'),
+            'site_email' => conf::getMainIniAsString('site_email'),
 
         );
         

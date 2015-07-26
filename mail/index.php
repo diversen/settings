@@ -1,6 +1,6 @@
 <?php
 
-if (!config::getModuleIni('settings_allow_email')) {
+if (!conf::getModuleIni('settings_allow_email')) {
     moduleloader::setStatus(403);
     return;
 }

@@ -106,7 +106,7 @@ class image_form {
             return false;
         }
                       
-        $uploaddir = config::getFullFilesPath() . $path;
+        $uploaddir = conf::getFullFilesPath() . $path;
         if (!file_exists($uploaddir)) {
             mkdir($uploaddir);
         }
@@ -129,7 +129,7 @@ class image_form {
      */
     public function unlinkFile($path = '/logo'){
         $db = new db();
-        $uploaddir = config::getFullFilesPath() . $path;
+        $uploaddir = conf::getFullFilesPath() . $path;
         $row = $db->selectOne($this->db_table, 'id', 1);
         if (empty($row[$this->db_column])){
             return false;
@@ -148,7 +148,7 @@ class image_form {
      */
     public function getFile($path = '/logo'){
         $db = new db();
-        $uploaddir = config::getFullFilesPath() . $path;
+        $uploaddir = conf::getFullFilesPath() . $path;
         $row = $db->selectOne($this->db_table, 'id', 1);
         if (empty($row[$this->db_column])){
             return false;

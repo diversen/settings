@@ -1,6 +1,6 @@
 <?php
 
-if (!config::getModuleIni('settings_allow_email')) {
+if (!conf::getModuleIni('settings_allow_email')) {
     moduleloader::setStatus(403);
     return;
 }
@@ -12,7 +12,7 @@ if (!session::checkAccessFromModuleIni('settings_allow_edit')) {
 layout::disableMainModuleMenu();
 
 $_POST = html::specialEncode($_POST);
-$method = config::getMainIni('mail_method');
+$method = conf::getMainIni('mail_method');
 
 //echo lang::translate('settings: mail current method is') . " ";
 //echo $method;

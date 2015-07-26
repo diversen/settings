@@ -9,7 +9,7 @@
 /**
  * @ignore
  */
-include_once config::getModulePath('settings') . "/lib/image_form.inc";
+include_once conf::getModulePath('settings') . "/lib/image_form.inc";
 /**
  * main class for settings/logo
  *

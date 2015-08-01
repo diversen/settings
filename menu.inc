@@ -1,5 +1,6 @@
 <?php
 
+use diversen\lang;
 /**
  * Main menu file for settings
  *

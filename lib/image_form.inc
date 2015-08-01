@@ -1,5 +1,14 @@
 <?php
 
+use diversen\template;
+use diversen\lang;
+use diversen\view;
+use diversen\db;
+use diversen\conf;
+use diversen\file;
+use diversen\session;
+use diversen\http;
+use diversen\html;
 /**
  * Main model file for settings/logo
  *

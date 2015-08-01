@@ -1,5 +1,7 @@
 <?php
 
+use diversen\lang;
+use diversen\html;
 /**
  * view file for settings/template
  *

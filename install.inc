@@ -1,5 +1,8 @@
 <?php
 
+use diversen\conf;
+use diversen\lang;
+
 $_INSTALL['MAIN_MENU_ITEMS'][] = array (
     'title' => lang::translate('Menu: settings_looks', null ,array ('no_translate' => true)),
     'url' => '/settings/index',

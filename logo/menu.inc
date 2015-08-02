@@ -1,6 +1,0 @@
-<?php
-
-/**
- * @ignore
- * @package     settings
- */

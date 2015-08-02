@@ -1,9 +1,9 @@
 <?php
 
 use diversen\conf;
-use diversen\session;
 use diversen\lang;
 use diversen\moduleloader;
+use diversen\session;
 use diversen\template;
 
 include_once conf::getModulePath('settings') . "/lib/image_form.php";

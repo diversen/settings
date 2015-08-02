@@ -1,15 +1,14 @@
 <?php
 
-
 use diversen\conf;
-use diversen\session;
-use diversen\lang;
-use diversen\view;
 use diversen\db;
-use diversen\http;
-use diversen\html;
-use diversen\template;
 use diversen\file;
+use diversen\html;
+use diversen\http;
+use diversen\lang;
+use diversen\session;
+use diversen\template;
+use diversen\view;
 /**
  * model file for settings/template
  *

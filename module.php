@@ -1,8 +1,8 @@
 <?php
 
+use diversen\lang;
 use diversen\session;
 use diversen\template;
-use diversen\lang;
 
 class settings {
 

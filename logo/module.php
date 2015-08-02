@@ -1,8 +1,8 @@
 <?php
 
-use diversen\session;
-use diversen\lang;
 use diversen\conf;
+use diversen\lang;
+use diversen\session;
 
 /**
  * @ignore

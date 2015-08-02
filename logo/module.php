@@ -1,21 +1,15 @@
 <?php
 
-use diversen\conf;
 use diversen\session;
 use diversen\lang;
-/**
- * Main model file for settings/logo
- *
- * @package     settings
- */
+use diversen\conf;
+
 /**
  * @ignore
  */
-include_once conf::getModulePath('settings') . "/lib/image_form.inc";
+include_once conf::getModulePath('settings') . "/lib/image_form.php";
 
 /**
- * main class for settings/logo
- *
  * @package     settings
  */
 class settings_logo extends image_form {
@@ -37,5 +31,4 @@ class settings_logo extends image_form {
 
         image_form::imageFormController($options);
     }
-
 }

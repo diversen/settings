@@ -198,58 +198,50 @@ class image_form {
         if (!empty($_POST['submit'])){
             if (!$image->moveFile($options['filename'], $options['save_path'])){
                 html::errors($image->errors);
-                view_image_form_upload($options);
+                self::formUpload($options);
                 if ($image->getFile($options['save_path'])){
-                    view_image_form_delete($options);
+                    self::formDelete($options);
                 }
             } else {
                 $image->updateFile($options['filename']);
                 session::setActionMessage(lang::translate('settings_image_updated'));   
                 http::locationHeader( $options['redirect'] );
             }    
-        } else if (!empty($_POST['delete'])){
+        } else if (!empty($_POST['delete'])) {
             $image->unlinkFile($options['save_path']);
             $image->deleteFileFromDb();
             session::setActionMessage(lang::translate('settings_image_deleted'));
-            http::locationHeader( $options['redirect']);
+            http::locationHeader($options['redirect']);
         } else {
-            view_image_form_upload($options);
-            if ($image->getFile($options['save_path'])){
-                view_image_form_delete($options);
+            self::formUpload($options);
+            if ($image->getFile($options['save_path'])) {
+                self::formDelete($options);
             }
         }
     }
-}
 
+    /**
+     * function for viewing image form
+     */
+    public static function formUpload($options) {
+        $vars = array(
+            'legend' => $options['page_title'],
+            'label' => lang::translate('settings_label_file'),
+            'filename' => $options['filename'],
+            'submit' => lang::system('update')
+        );
+        echo view::get('settings', 'logo_upload', $vars);
+    }
 
-/**
- * Main view file for settings/logo
- *
- * @package     settings
- */
-
-/**
- * function for viewing logo form
- */
-function view_image_form_upload ($options ){ 
-    $vars = array (
-        'legend' => $options['page_title'],
-        'label' => lang::translate('settings_label_file'),
-        'filename' => $options['filename'],
-        'submit' => lang::system('update')
-    );
-    echo view::get('settings', 'logo_upload', $vars);
-
-}
-
-/**
- * function for viewing delete logo
- */
-function view_image_form_delete ($options){ 
-    $vars = array (
-        'legend' => lang::translate('settings_legend_delete'),
-        'submit' => lang::system('delete'),
-        'filename' => $options['filename'],
-    );
-    echo view::get('settings', 'logo_delete', $vars);
+    /**
+     * function for viewing delete image
+     */
+    public static function formDelete($options) {
+        $vars = array(
+            'legend' => lang::translate('settings_legend_delete'),
+            'submit' => lang::system('delete'),
+            'filename' => $options['filename'],
+        );
+        echo view::get('settings', 'logo_delete', $vars);
+    }
 }

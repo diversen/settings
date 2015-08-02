@@ -5,12 +5,13 @@ use diversen\session;
 use diversen\lang;
 use diversen\moduleloader;
 use diversen\template;
-include_once conf::getModulePath('settings') . "/lib/image_form.inc";
+
+include_once conf::getModulePath('settings') . "/lib/image_form.php";
 
 class settings_favicon extends image_form {
 
     public function indexAction() {
-        if (!session::checkAccessFromModuleIni('settings_allow_edit')) {
+        if (!session::authIni('settings_allow_edit')) {
             return;
         }
 

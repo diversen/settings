@@ -75,7 +75,7 @@ $_COS_LANG_MODULE['Menus'] = 'Menus';
 
 $_COS_LANG_MODULE['Only unique values allowed for every menu item'] = 'Only unique values allowed for every menu item';
 
-// Translation of file /modules/settings/lib/image_form.inc
+// Translation of file /modules/settings/lib/image_form.php
 
 $_COS_LANG_MODULE['settings_upload_no_file_specified'] = 'Please select a file';
 $_COS_LANG_MODULE['settings_upload_wrong_filetype_specified'] = 'Wrong file type. Only these are allowed: ';

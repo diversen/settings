@@ -1,13 +1,9 @@
 <?php
 
 use diversen\lang;
-/**
- * Main menu file for settings
- *
- * @package     settings
- */
 
 $_MODULE_MENU = array (
+    
     array(
         'title' => lang::translate('Change Logo'),
         'url' => '/settings/logo/index',
@@ -31,6 +27,4 @@ $_MODULE_MENU = array (
         'url' => '/settings/template/css',
         'auth' => 'admin',
     ),
-    
-
 );

@@ -221,7 +221,7 @@ class settings_mail {
 
         $f->select('mail_method', $ary, 'title', 'id', $method);
 
-        $f->submit('mail_method_submit', lang::system('submit'));
+        $f->submit('mail_method_submit', lang::translate('Submit'));
         $f->formEnd();
         echo $f->getStr();
     }
@@ -261,7 +261,7 @@ class settings_mail {
         $f->label('smtp_params_auth', lang::translate('settings: label mail smtp auth'));
         $f->text('smtp_params_auth');
 
-        $f->submit('smtp_submit', lang::system('submit'));
+        $f->submit('smtp_submit', lang::translate('Submit'));
 
         $f->formEnd();
         echo $f->getStr();
@@ -289,7 +289,7 @@ class settings_mail {
         $f->label('sendmail_args', lang::translate('settings: label mail sendmail args'));
         $f->text('sendmail_args');
 
-        $f->submit('sendmail_submit', lang::system('submit'));
+        $f->submit('sendmail_submit', lang::translate('submit'));
 
         $f->formEnd();
         echo $f->getStr();
@@ -315,7 +315,7 @@ class settings_mail {
 
 
 
-        $f->submit('mail_submit', lang::system('submit'));
+        $f->submit('mail_submit', lang::translate('submit'));
 
         $f->formEnd();
         echo $f->getStr();
@@ -339,7 +339,7 @@ class settings_mail {
         $f->label('site_email', lang::translate('settings: label mail system site email'));
         $f->text('site_email');
 
-        $f->submit('site_email_submit', lang::system('submit'));
+        $f->submit('site_email_submit', lang::translate('Submit'));
 
         $f->formEnd();
         echo $f->getStr();

@@ -204,13 +204,13 @@ class image_form {
                 }
             } else {
                 $image->updateFile($options['filename']);
-                session::setActionMessage(lang::translate('settings_image_updated'));   
+                session::setActionMessage(lang::translate('Image updated'));   
                 http::locationHeader( $options['redirect'] );
             }    
         } else if (!empty($_POST['delete'])) {
             $image->unlinkFile($options['save_path']);
             $image->deleteFileFromDb();
-            session::setActionMessage(lang::translate('settings_image_deleted'));
+            session::setActionMessage(lang::translate('Image deleted'));
             http::locationHeader($options['redirect']);
         } else {
             self::formUpload($options);
@@ -226,9 +226,9 @@ class image_form {
     public static function formUpload($options) {
         $vars = array(
             'legend' => $options['page_title'],
-            'label' => lang::translate('settings_label_file'),
+            'label' => lang::translate('Update image'),
             'filename' => $options['filename'],
-            'submit' => lang::system('update')
+            'submit' => lang::translate('Update')
         );
         echo view::get('settings', 'logo_upload', $vars);
     }
@@ -238,8 +238,8 @@ class image_form {
      */
     public static function formDelete($options) {
         $vars = array(
-            'legend' => lang::translate('settings_legend_delete'),
-            'submit' => lang::system('delete'),
+            'legend' => lang::translate('Delete image'),
+            'submit' => lang::translate('Delete'),
             'filename' => $options['filename'],
         );
         echo view::get('settings', 'logo_delete', $vars);

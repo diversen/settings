@@ -169,7 +169,7 @@ class settings_template extends db {
         $list = file::getFileListRecursive($template_path);
         foreach ($list as $val) {
             $info = pathinfo($val);
-            if ($info['basename'] != 'template.inc')
+            if ($info['basename'] != 'template.php')
                 continue;
             $row = array();
             $row['id'] = $template = str_replace($template_path . '/', '', $info['dirname']);

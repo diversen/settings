@@ -4,7 +4,7 @@ use diversen\conf;
 use diversen\lang;
 
 $_INSTALL['MAIN_MENU_ITEMS'][] = array (
-    'title' => lang::translate('Menu: settings_looks', null ,array ('no_translate' => true)),
+    'title' => lang::translate('Look and feel', null ,array ('no_translate' => true)),
     'url' => '/settings/index',
     'auth' => conf::getModuleIni('settings_allow_edit'),
     'module_name' => 'settings',
@@ -16,7 +16,7 @@ $_INSTALL['MAIN_MENU_ITEMS'][] = array (
 
 if (conf::getModuleIni('settings_allow_email')) {
     $_INSTALL['MAIN_MENU_ITEMS'][] = array (
-        'title' => lang::translate('Menu: settings_mail', null ,array ('no_translate' => true)),
+        'title' => lang::translate('SMTP Mail', null ,array ('no_translate' => true)),
         'url' => '/settings/mail/index',
     'auth' => conf::getModuleIni('settings_allow_edit'),
         'module_name' => 'settings',

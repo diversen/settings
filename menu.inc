@@ -11,7 +11,7 @@ $_MODULE_MENU = array (
     ),
     
     array(
-        'title' => lang::translate('settings_menu_favicon'),
+        'title' => lang::translate('Change favicon'),
         'url' => '/settings/favicon/index',
         'auth' => 'admin'
     ),

@@ -44,7 +44,6 @@ $LANG['settings'] = 'indstillinger';
 $LANG['Change Logo'] = 'Skift Logo';
 $LANG['Change favicon'] = 'Skift favicon';
 $LANG['Set template'] = 'Set skabelon';
-$LANG['settings_favicon_title'] = 'settings_favicon_title';
 $LANG['Favicon settings'] = 'Favicon indstillinger';
 $LANG['No file was specified'] = 'Ingen fil blev angivet';
 $LANG['Wrong mime-type. These are allowed'] = 'Forkert mime-type. Disse metoder er tilladt';

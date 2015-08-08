@@ -21,7 +21,7 @@ class settings_favicon extends image_form {
 
         moduleloader::includeModule('settings');
         $options = array(
-            'page_title' => lang::translate('settings_favicon_title'),
+            'page_title' => lang::translate('Favicon settings'),
             'redirect' => '/settings/favicon/index',
             'db_table' => 'settings',
             'db_column' => 'background',

@@ -67,7 +67,7 @@ $LANG['Set template'] = 'Set template';
 $LANG['Edit Template Css'] = 'Edit Template Css';
 // Translation of file modules/settings/background/module.php
 
-$LANG['settings_favicon_title'] = 'settings_favicon_title';
+$LANG['Favicon settings'] = 'Favicon settings';
 // Translation of file modules/settings/favicon/module.php
 
 $LANG['Favicon settings'] = 'Favicon settings';

@@ -99,7 +99,7 @@ class image_form {
     public function moveFile($filename = 'logo', $path = '/logo'){
 
         if(empty($_FILES[$filename]['name'])) {
-            $this->errors[] = lang::translate('settings_upload_no_file_specified');
+            $this->errors[] = lang::translate('No file was specified');
             return false;
         }
         
@@ -107,7 +107,7 @@ class image_form {
         
         $mime = file::getMime($_FILES[$filename]['tmp_name']);
         if (!in_array($mime, $valid_types)) {
-            $error = lang::translate('settings_upload_wrong_filetype_specified');
+            $error = lang::translate('Wrong mime-type. These are allowed');
             $valid = array_keys($valid_types);
             $valid = implode(", ", $valid);
             $error.= $valid;

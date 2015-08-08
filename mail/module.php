@@ -32,7 +32,7 @@ class settings_mail {
             if (empty($m->errors)) {
                 $res = $m->updateMethod();
                 if ($res) {
-                    $message = lang::translate('settings: action message: mail method updated');
+                    $message = lang::translate('Mail method updated');
                     http::locationHeader('/settings/mail/index', $message);
                 }
             }
@@ -64,7 +64,7 @@ class settings_mail {
                 if (empty($m->errors)) {
                     $res = $m->updateSMTP();
                     if ($res) {
-                        $message = lang::translate('settings: action message: smtp updated');
+                        $message = lang::translate('SMTP settings updated');
                         http::locationHeader('/settings/mail/params', $message);
                     }
                 } else {
@@ -79,7 +79,7 @@ class settings_mail {
                 if (empty($m->errors)) {
                     $res = $m->updateSendmail();
                     if ($res) {
-                        $message = lang::translate('settings: action message: sendmail updated');
+                        $message = lang::translate('Sendmail settings updated');
                         http::locationHeader('/settings/mail/params', $message);
                     }
                 }
@@ -92,7 +92,7 @@ class settings_mail {
                 if (empty($m->errors)) {
                     $res = $m->updateMail();
                     if ($res) {
-                        $message = lang::translate('settings: action message: smtp updated');
+                        $message = lang::translate('SMTP settings updated');
                         http::locationHeader('/settings/mail/params', $message);
                     }
                 }
@@ -118,7 +118,7 @@ class settings_mail {
             if (empty($m->errors)) {
                 $res = $m->updateSiteEmail();
                 if ($res) {
-                    $message = lang::translate('settings: action message: site email updated');
+                    $message = lang::translate('Website email updated');
                     http::locationHeader('/settings/mail/system', $message);
                 }
             }
@@ -129,7 +129,7 @@ class settings_mail {
     public function validateMethod() {
         $method = @$_POST['mail_method'];
         if ($method != 'smtp' XOR $method != 'sendmail' XOR $method != 'mail') {
-            $this->errors[] = lang::translate('settings: error: not a valid mail method');
+            $this->errors[] = lang::translate('Not a valid mail method');
         }
     }
 
@@ -141,7 +141,7 @@ class settings_mail {
                 empty($_POST['smtp_params_password']) ||
                 empty($_POST['smtp_params_auth'])
         ) {
-            $this->errors[] = lang::translate('settings: error: all smtp params needs to be set');
+            $this->errors[] = lang::translate('All SMTP parameters need to be set');
         }
     }
 
@@ -198,11 +198,11 @@ class settings_mail {
         $f = new html ();
         $f->init(null, 'mail_method_submit');
 
-        $legend = lang::translate('settings: mail method legend');
+        $legend = lang::translate('Mail method');
 
         $f->formStart('mail_settings_form');
         $f->legend($legend);
-        $f->label('mail_method', lang::translate('settings: mail label type'));
+        $f->label('mail_method', lang::translate('Type'));
 
         $ary = array(
             array(
@@ -243,22 +243,22 @@ class settings_mail {
         $f->formStart('mail_settings_form');
 
 
-        $legend = lang::translate('settings: mail smtp legend');
+        $legend = lang::translate('Set SMTP settings');
         $f->legend($legend);
 
-        $f->label('smtp_params_host', lang::translate('settings: label mail smtp host'));
+        $f->label('smtp_params_host', lang::translate('SMTP Host'));
         $f->text('smtp_params_host');
 
-        $f->label('smtp_params_port', lang::translate('settings: label mail smtp port'));
+        $f->label('smtp_params_port', lang::translate('SMTP port'));
         $f->text('smtp_params_port');
 
-        $f->label('smtp_params_username', lang::translate('settings: label mail smtp username'));
+        $f->label('smtp_params_username', lang::translate('SMTP username'));
         $f->text('smtp_params_username');
 
-        $f->label('smtp_params_password', lang::translate('settings: label mail smtp password'));
+        $f->label('smtp_params_password', lang::translate('SMTP password'));
         $f->text('smtp_params_password');
 
-        $f->label('smtp_params_auth', lang::translate('settings: label mail smtp auth'));
+        $f->label('smtp_params_auth', lang::translate('SMTP authentication'));
         $f->text('smtp_params_auth');
 
         $f->submit('smtp_submit', lang::translate('Submit'));
@@ -333,10 +333,10 @@ class settings_mail {
         $f->init($values, 'site_email_submit');
         $f->formStart('mail_settings_form');
 
-        $legend = lang::translate('settings: mail email system legend');
+        $legend = lang::translate('Set websites system email');
         $f->legend($legend);
 
-        $f->label('site_email', lang::translate('settings: label mail system site email'));
+        $f->label('site_email', lang::translate('Email'));
         $f->text('site_email');
 
         $f->submit('site_email_submit', lang::translate('Submit'));

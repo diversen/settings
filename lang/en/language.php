@@ -5,9 +5,9 @@ $LANG = array();
 // Translation of file modules/settings/template/module.php
 
 $LANG['Edit Template'] = 'Edit Template';
-$LANG['settings_template_updated'] = 'settings_template_updated';
+$LANG['Template has been updated'] = 'Template has been updated';
 $LANG['Edit Template Css'] = 'Edit Template Css';
-$LANG['settings_css_updated'] = 'settings_css_updated';
+$LANG['CSS settings has been updated'] = 'CSS settings has been updated';
 $LANG['Select a template'] = 'Select a template';
 // Translation of file modules/settings/template/views.php
 
@@ -21,33 +21,34 @@ $LANG['Select Stylesheet'] = 'Select Stylesheet';
 $LANG['Site Settings'] = 'Site Settings';
 // Translation of file modules/settings/mail/module.php
 
-$LANG['settings: action message: mail method updated'] = 'settings: action message: mail method updated';
-$LANG['settings: action message: smtp updated'] = 'settings: action message: smtp updated';
-$LANG['settings: action message: sendmail updated'] = 'settings: action message: sendmail updated';
-$LANG['settings: action message: site email updated'] = 'settings: action message: site email updated';
-$LANG['settings: error: not a valid mail method'] = 'settings: error: not a valid mail method';
-$LANG['settings: error: all smtp params needs to be set'] = 'settings: error: all smtp params needs to be set';
-$LANG['settings: mail method legend'] = 'settings: mail method legend';
-$LANG['settings: mail label type'] = 'settings: mail label type';
+$LANG['Mail method updated'] = 'Mail method updated';
+$LANG['SMTP settings updated'] = 'SMTP settings updated';
+$LANG['Sendmail settings updated'] = 'Sendmail settings updated';
+$LANG['Website email updated'] = 'Website email updated';
+$LANG['Not a valid mail method'] = 'Not a valid mail method';
+$LANG['All SMTP parameters need to be set'] = 'All SMTP parameters need to be set';
+$LANG['Mail method'] = 'Mail method';
+$LANG['Type'] = 'Type';
 $LANG['Submit'] = 'Submit';
+$LANG['Set SMTP settings'] = 'Set SMTP settings';
+$LANG['SMTP Host'] = 'SMTP Host';
+$LANG['SMTP port'] = 'SMTP port';
+$LANG['SMTP username'] = 'SMTP username';
+$LANG['SMTP password'] = 'SMTP password';
+$LANG['SMTP authentication'] = 'SMTP authentication';
 $LANG['settings: mail smtp legend'] = 'settings: mail smtp legend';
-$LANG['settings: label mail smtp host'] = 'settings: label mail smtp host';
-$LANG['settings: label mail smtp port'] = 'settings: label mail smtp port';
-$LANG['settings: label mail smtp username'] = 'settings: label mail smtp username';
-$LANG['settings: label mail smtp password'] = 'settings: label mail smtp password';
-$LANG['settings: label mail smtp auth'] = 'settings: label mail smtp auth';
 $LANG['settings: label mail sendmail path'] = 'settings: label mail sendmail path';
 $LANG['settings: label mail sendmail args'] = 'settings: label mail sendmail args';
 $LANG['submit'] = 'submit';
 $LANG['settings: mail php legend'] = 'settings: mail php legend';
 $LANG['settings: label mail php params'] = 'settings: label mail php params';
-$LANG['settings: mail email system legend'] = 'settings: mail email system legend';
-$LANG['settings: label mail system site email'] = 'settings: label mail system site email';
+$LANG['Set websites system email'] = 'Set websites system email';
+$LANG['Email'] = 'Email';
 // Translation of file modules/settings/mail/menu.inc
 
-$LANG['settings: menu mail system mail'] = 'settings: menu mail system mail';
-$LANG['settings: menu mail method'] = 'settings: menu mail method';
-$LANG['settings: menu mail params'] = 'settings: menu mail params';
+$LANG['System email'] = 'System email';
+$LANG['Mail method'] = 'Mail method';
+$LANG['Mail params'] = 'Mail params';
 // Translation of file modules/settings/logo/module.php
 
 $LANG['Edit Logo'] = 'Edit Logo';
@@ -69,11 +70,11 @@ $LANG['Edit Template Css'] = 'Edit Template Css';
 $LANG['settings_favicon_title'] = 'settings_favicon_title';
 // Translation of file modules/settings/favicon/module.php
 
-$LANG['settings_favicon_title'] = 'settings_favicon_title';
+$LANG['Favicon settings'] = 'Favicon settings';
 // Translation of file modules/settings/lib/image_form.php
 
-$LANG['settings_upload_no_file_specified'] = 'settings_upload_no_file_specified';
-$LANG['settings_upload_wrong_filetype_specified'] = 'settings_upload_wrong_filetype_specified';
+$LANG['No file was specified'] = 'No file was specified';
+$LANG['Wrong mime-type. These are allowed'] = 'Wrong mime-type. These are allowed';
 $LANG['Edit Logo'] = 'Edit Logo';
 $LANG['Image updated'] = 'Image updated';
 $LANG['Image deleted'] = 'Image deleted';

@@ -49,7 +49,7 @@ class settings_template extends db {
             $t->validateTemplate();
             if (empty($t->errors)) {
                 $t->updateTemplate();
-                session::setActionMessage(lang::translate('settings_template_updated'));
+                session::setActionMessage(lang::translate('Template has been updated'));
                 http::locationHeader('/settings/template/index');
             }
         }
@@ -81,7 +81,7 @@ class settings_template extends db {
             $t->validateCss();
             if (empty($t->errors)) {
                 $t->updateCss();
-                session::setActionMessage(lang::translate('settings_css_updated'));
+                session::setActionMessage(lang::translate('CSS settings has been updated'));
                 http::locationHeader('/settings/template/css');
             }
         } else {

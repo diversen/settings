@@ -10,19 +10,19 @@ use diversen\lang;
 $_MODULE_MENU = array (
     
     array(
-        'title' => lang::translate('settings: menu mail system mail'),
+        'title' => lang::translate('System email'),
         'url' => '/settings/mail/system',
         'auth' => 'admin'
     ),
     
     array(
-        'title' => lang::translate('settings: menu mail method'),
+        'title' => lang::translate('Mail method'),
         'url' => '/settings/mail/index',
         'auth' => 'admin'
     ),
     
     array(
-        'title' => lang::translate('settings: menu mail params'),
+        'title' => lang::translate('Mail params'),
         'url' => '/settings/mail/params',
         'auth' => 'admin'
     ),

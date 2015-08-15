@@ -1,18 +1,20 @@
 <?php
 
+namespace modules\settings\logo;
 use diversen\conf;
 use diversen\lang;
 use diversen\session;
 
+use modules\settings\lib\module as image_form;
 /**
  * @ignore
  */
-include_once conf::getModulePath('settings') . "/lib/image_form.php";
+//include_once conf::getModulePath('settings') . "/lib/image_form.php";
 
 /**
  * @package     settings
  */
-class settings_logo extends image_form {
+class module extends image_form {
 
     public function indexAction() {
 

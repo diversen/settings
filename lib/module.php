@@ -1,5 +1,7 @@
 <?php
 
+namespace modules\settings\lib;
+
 use diversen\conf;
 use diversen\db;
 use diversen\file;
@@ -20,7 +22,7 @@ use diversen\view;
  *
  * @package     settings
  */
-class image_form {
+class module {
 
     /**
      * var holding errors
@@ -107,7 +109,7 @@ class image_form {
         
         $mime = file::getMime($_FILES[$filename]['tmp_name']);
         if (!in_array($mime, $valid_types)) {
-            $error = lang::translate('Wrong mime-type. These are allowed');
+            $error = lang::translate('Wrong mime-type. These are allowed: ');
             $valid = array_keys($valid_types);
             $valid = implode(", ", $valid);
             $error.= $valid;
@@ -194,7 +196,7 @@ class image_form {
      */
     public static function imageFormController ($options) {
         template::setTitle($options['page_title']);
-        $image = new image_form($options);
+        $image = new self($options);
         if (!empty($_POST['submit'])){
             if (!$image->moveFile($options['filename'], $options['save_path'])){
                 html::errors($image->errors);

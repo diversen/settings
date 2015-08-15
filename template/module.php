@@ -1,5 +1,7 @@
 <?php
 
+namespace modules\settings\template;
+
 use diversen\conf;
 use diversen\db;
 use diversen\file;
@@ -9,6 +11,8 @@ use diversen\lang;
 use diversen\session;
 use diversen\template;
 use diversen\view;
+
+use modules\settings\template\views;
 /**
  * model file for settings/template
  *
@@ -21,7 +25,7 @@ view::includeOverrideFunctions('settings', 'template/views.php');
  *
  * @package    settings
  */
-class settings_template extends db {
+class module {
 
     /**
      *
@@ -38,7 +42,7 @@ class settings_template extends db {
 
         template::setTitle(lang::translate('Edit Template'));
 
-        $t = new settings_template();
+        $t = new self();
         $values = $t->getTemplate('update');
 
         if (isset($_POST)) {
@@ -57,7 +61,7 @@ class settings_template extends db {
         if (!empty($t->errors)) {
             echo html::getErrors($t->errors);
         }
-        settings_template($values);
+        views::settings_template($values);
         $t->getTemplates();
         return;
     }
@@ -74,19 +78,19 @@ class settings_template extends db {
         if (isset($_POST))
             $_POST = html::specialEncode($_POST);
 
-        $t = new settings_template();
-        $values = $t->getCss('update');
+        //$t = new self();
+        $values = self::getCss('update');
 
         if (isset($_POST['css'])) {
-            $t->validateCss();
+            $this->validateCss();
             if (empty($t->errors)) {
-                $t->updateCss();
+                $this->updateCss();
                 session::setActionMessage(lang::translate('CSS settings has been updated'));
                 http::locationHeader('/settings/template/css');
             }
         } else {
-            settings_update_css($values);
-            $t->getCss();
+            views::settings_update_css($values);
+            self::getCss();
         }
     }
 
@@ -137,9 +141,9 @@ class settings_template extends db {
      * @return boolean  true on success or false on failure
      */
     public function updateTemplate() {
-
+        $db = new db();
         $values = array('template' => $_POST['template'], 'css' => NULL);
-        $res = $this->update('settings', $values, 1);
+        $res = $db->update('settings', $values, 1);
         return $res;
     }
 
@@ -149,10 +153,10 @@ class settings_template extends db {
      * @return boolean  true on success or false on failure
      */
     public function updateCss() {
-
+         $db = new db();
         $values = array('css' => $_POST['css']);
 
-        $res = $this->update('settings', $values, 1);
+        $res = $db->update('settings', $values, 1);
         return $res;
     }
 

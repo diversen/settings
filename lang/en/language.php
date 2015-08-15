@@ -36,12 +36,11 @@ $LANG['SMTP port'] = 'SMTP port';
 $LANG['SMTP username'] = 'SMTP username';
 $LANG['SMTP password'] = 'SMTP password';
 $LANG['SMTP authentication'] = 'SMTP authentication';
-$LANG['settings: mail smtp legend'] = 'settings: mail smtp legend';
-$LANG['settings: label mail sendmail path'] = 'settings: label mail sendmail path';
-$LANG['settings: label mail sendmail args'] = 'settings: label mail sendmail args';
+$LANG['Sendmail settings'] = 'Sendmail settings';
+$LANG['Sendmail path'] = 'Sendmail path';
+$LANG['Sendmail args'] = 'Sendmail args';
+$LANG['Set mail'] = 'Set mail';
 $LANG['submit'] = 'submit';
-$LANG['settings: mail php legend'] = 'settings: mail php legend';
-$LANG['settings: label mail php params'] = 'settings: label mail php params';
 $LANG['Set websites system email'] = 'Set websites system email';
 $LANG['Email'] = 'Email';
 // Translation of file modules/settings/mail/menu.inc
@@ -71,10 +70,10 @@ $LANG['Favicon settings'] = 'Favicon settings';
 // Translation of file modules/settings/favicon/module.php
 
 $LANG['Favicon settings'] = 'Favicon settings';
-// Translation of file modules/settings/lib/image_form.php
+// Translation of file modules/settings/lib/module.php
 
 $LANG['No file was specified'] = 'No file was specified';
-$LANG['Wrong mime-type. These are allowed'] = 'Wrong mime-type. These are allowed';
+$LANG['Wrong mime-type. These are allowed: '] = 'Wrong mime-type. These are allowed: ';
 $LANG['Edit Logo'] = 'Edit Logo';
 $LANG['Image updated'] = 'Image updated';
 $LANG['Image deleted'] = 'Image deleted';

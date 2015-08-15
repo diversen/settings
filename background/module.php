@@ -1,17 +1,20 @@
 <?php
 
+namespace modules\settings\favicon;
+
 use diversen\conf;
 use diversen\lang;
 use diversen\moduleloader;
 use diversen\session;
 use diversen\template;
 
+use modules\settings\lib\module as image_form;
 /**
  * @ignore
  */
-include_once conf::getModulePath('settings') . "/lib/image_form.php";
+//include_once conf::getModulePath('settings') . "/lib/image_form.php";
 
-class settings_favicon extends image_form {
+class module extends image_form {
 
     public function indexAction() {
 

@@ -1,14 +1,16 @@
 <?php
 
+namespace modules\settings\favicon; 
 use diversen\conf;
 use diversen\lang;
 use diversen\moduleloader;
 use diversen\session;
 use diversen\template;
 
-include_once conf::getModulePath('settings') . "/lib/image_form.php";
+use modules\settings\lib\module as image_form;
+//include_once conf::getModulePath('settings') . "/lib/image_form.php";
 
-class settings_favicon extends image_form {
+class module extends image_form {
 
     public function indexAction() {
         if (!session::authIni('settings_allow_edit')) {

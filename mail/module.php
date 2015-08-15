@@ -1,5 +1,7 @@
 <?php
 
+namespace modules\settings\mail;
+
 use diversen\conf;
 use diversen\html;
 use diversen\http;
@@ -8,7 +10,9 @@ use diversen\layout;
 use diversen\moduleloader;
 use diversen\session;
 
-class settings_mail {
+use modules\configdb\module as configdb;
+
+class module {
 
     public $errors = array();
 
@@ -24,7 +28,7 @@ class settings_mail {
 
         layout::disableMainModuleMenu();
 
-        $m = new settings_mail();
+        $m = new self();
 
         if (!empty($_POST)) {
             $_POST = html::specialEncode($_POST);
@@ -56,7 +60,7 @@ class settings_mail {
         $_POST = html::specialEncode($_POST);
         $method = conf::getMainIni('mail_method');
 
-        $m = new settings_mail();
+        $m = new self();
 
         if ($method == 'smtp') {
             if (isset($_POST['smtp_submit'])) {
@@ -113,7 +117,7 @@ class settings_mail {
 
         layout::disableMainModuleMenu();
 
-        $m = new settings_mail();
+        $m = new self();
         if (isset($_POST['site_email_submit'])) {
             if (empty($m->errors)) {
                 $res = $m->updateSiteEmail();
@@ -280,16 +284,16 @@ class settings_mail {
         $f->init($values, 'sendmail_submit');
         $f->formStart('mail_settings_form');
 
-        $legend = lang::translate('settings: mail smtp legend');
+        $legend = lang::translate('Sendmail settings');
         $f->legend($legend);
 
-        $f->label('sendmail_path', lang::translate('settings: label mail sendmail path'));
+        $f->label('sendmail_path', lang::translate('Sendmail path'));
         $f->text('sendmail_path');
 
-        $f->label('sendmail_args', lang::translate('settings: label mail sendmail args'));
+        $f->label('sendmail_args', lang::translate('Sendmail args'));
         $f->text('sendmail_args');
 
-        $f->submit('sendmail_submit', lang::translate('submit'));
+        $f->submit('sendmail_submit', lang::translate('Submit'));
 
         $f->formEnd();
         echo $f->getStr();
@@ -307,10 +311,10 @@ class settings_mail {
         $f->init($values, 'mail_submit');
         $f->formStart('mail_settings_form');
 
-        $legend = lang::translate('settings: mail php legend');
+        $legend = lang::translate('Set mail');
         $f->legend($legend);
 
-        $f->label('mail_params', lang::translate('settings: label mail php params'));
+        $f->label('mail_params', lang::translate('Set mail'));
         $f->text('mail_params');
 
 
@@ -344,5 +348,4 @@ class settings_mail {
         $f->formEnd();
         echo $f->getStr();
     }
-
 }

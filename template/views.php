@@ -23,11 +23,14 @@ class views {
         if (!empty($_POST['submit'])) {
             $values['template'] = $_POST['template'];
         }
+        
+        $str = html::formStartClean('css', 'post');
+        $str.= html::csrfHidden(true);
+        
         ?>
 
         <div id="form_main">
-            <form method="post" action="">
-                <fieldset>
+            <?=$str?>
                     <legend><?php echo lang::translate('Edit Template') ?></legend>
                     <p><label for="template"><?php echo lang::translate('Select template') ?>:</label>
         <?php echo html::selectClean('template', module::getTemplates(), 'title', 'id', $values['template']) ?></p>

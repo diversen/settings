@@ -72,18 +72,21 @@ class module {
         if (!session::checkAccessFromModuleIni('settings_allow_edit')) {
             return;
         }
-
+        
         template::setTitle(lang::translate('Edit Template Css'));
 
-        if (isset($_POST))
+        if (isset($_POST)){
             $_POST = html::specialEncode($_POST);
-
+        }
+        
         //$t = new self();
         $values = self::getCss('update');
 
         if (isset($_POST['css'])) {
+            
             $this->validateCss();
             if (empty($t->errors)) {
+                
                 $this->updateCss();
                 session::setActionMessage(lang::translate('CSS settings has been updated'));
                 http::locationHeader('/settings/template/css');

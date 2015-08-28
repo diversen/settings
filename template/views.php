@@ -47,11 +47,14 @@ class views {
         if (isset($_POST['css'])) {
             $values['css'] = $_POST['css'];
         }
+        
+        $str = html::formStartClean('css', 'post');
+        $str.= html::csrfHidden(true);
+
         ?>
 
         <div id="form_main">
-            <form method="post" action="/settings/template/css">
-                <fieldset>
+            <?=$str?>
                     <legend><?php echo lang::translate('Edit Stylesheet') ?></legend>
                     <p><label for="css"><?php echo lang::translate('Select Stylesheet') ?>:</label>
         <?php echo html::selectClean('css', settings_template::getAllCss(), 'title', 'id', $values['css']) ?></p>

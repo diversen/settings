@@ -25,6 +25,7 @@ class views {
         }
         
         $str = html::formStartClean('css', 'post');
+        
         $str.= html::csrfHidden(true);
         
         ?>
@@ -33,12 +34,13 @@ class views {
             <?=$str?>
                     <legend><?php echo lang::translate('Edit Template') ?></legend>
                     <p><label for="template"><?php echo lang::translate('Select template') ?>:</label>
-        <?php echo html::selectClean('template', module::getTemplates(), 'title', 'id', $values['template']) ?></p>
+        <?php echo html::selectClean('template', settings_template::getTemplates(), 'title', 'id', $values['template']) ?></p>
                     <input type="submit" name="submit" value="<?php echo lang::translate('Update') ?>"><br />
                 </fieldset>
             </form>
         </div>
         <?php
+        
     }
 
     /**

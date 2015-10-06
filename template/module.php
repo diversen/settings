@@ -34,6 +34,7 @@ class module {
     public $errors = array();
 
     public function indexAction() {
+        
         http::prg();
 
         if (!session::checkAccessFromModuleIni('settings_allow_edit')) {
@@ -62,6 +63,7 @@ class module {
             echo html::getErrors($t->errors);
         }
         views::settings_template($values);
+        
         $t->getTemplates();
         return;
     }
@@ -173,14 +175,18 @@ class module {
         $rows = array();
 
         // TODO: speed up
-        $list = file::getFileListRecursive($template_path);
+        
+        $list = file::getDirsGlob($template_path);
+
         foreach ($list as $val) {
-            $info = pathinfo($val);
-            if ($info['basename'] != 'template.php')
+            if (!file_exists($val . "/template.php")) {
                 continue;
+            }
             $row = array();
-            $row['id'] = $template = str_replace($template_path . '/', '', $info['dirname']);
-            $row['title'] = $template;
+            
+            $name = str_replace($template_path . "/", '', $val);
+            $row['id'] = $name;
+            $row['title'] = $name;
             $rows[] = $row;
         }
         return $rows;

@@ -84,6 +84,7 @@ class module {
         
         $valid_types = array ();
         $valid_types['gif'] = "image/gif";
+        $valid_types['svg'] = "image/svg+xml";
         $valid_types['jpeg'] = "image/jpeg";
         $valid_types['pjpeg'] = "image/pjpeg";
         $valid_types['png'] = "image/png";

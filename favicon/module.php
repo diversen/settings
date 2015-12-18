@@ -31,7 +31,6 @@ class module extends image_form {
             )
         );
 
-        template::getFaviconHTML();
         image_form::imageFormController($options);
     }
 

@@ -123,7 +123,8 @@ class module {
             mkdir($uploaddir);
         }
         
-        $uploadfile = $uploaddir . '/' . basename($_FILES[$filename]['name']);
+        
+        $uploadfile = $uploaddir . '/' . rawurldecode($_FILES[$filename]['name']);
         $this->unlinkFile($path);
         if (isset($_FILES[$filename])){
             if (move_uploaded_file($_FILES[$filename]['tmp_name'], $uploadfile)) {

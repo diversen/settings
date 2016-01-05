@@ -1,7 +1,7 @@
 <?php
 
 namespace modules\settings\logo;
-use diversen\conf;
+
 use diversen\lang;
 use diversen\session;
 
@@ -31,6 +31,6 @@ class module extends image_form {
             'save_path' => '/logo',
         );
 
-        image_form::imageFormController($options);
+        self::imageFormController($options);
     }
 }

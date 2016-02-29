@@ -2,23 +2,27 @@
 
 $LANG = array();
 
-// Translation of file modules/settings/template/module.php
+// Translation of file modules/settings/system_lang.inc
 
-$LANG['Edit Template'] = 'Edit Template';
-$LANG['Template has been updated'] = 'Template has been updated';
-$LANG['Edit Template Css'] = 'Edit Template Css';
-$LANG['CSS settings has been updated'] = 'CSS settings has been updated';
-$LANG['Select a template'] = 'Select a template';
-// Translation of file modules/settings/template/views.php
+$LANG['settings'] = 'settings';
+// Translation of file modules/settings/background/module.php
 
-$LANG['Edit Template'] = 'Edit Template';
-$LANG['Select template'] = 'Select template';
-$LANG['Update'] = 'Update';
-$LANG['Edit Stylesheet'] = 'Edit Stylesheet';
-$LANG['Select Stylesheet'] = 'Select Stylesheet';
-// Translation of file modules/settings/module.php
+$LANG['Favicon settings'] = 'Favicon settings';
+// Translation of file modules/settings/install.inc
 
-$LANG['Site Settings'] = 'Site Settings';
+$LANG['Look and feel'] = 'Look and feel';
+$LANG['SMTP Mail'] = 'SMTP Mail';
+// Translation of file modules/settings/logo/module.php
+
+$LANG['Edit Logo'] = 'Edit Logo';
+// Translation of file modules/settings/favicon/module.php
+
+$LANG['Favicon settings'] = 'Favicon settings';
+// Translation of file modules/settings/mail/menu.inc
+
+$LANG['System email'] = 'System email';
+$LANG['Mail method'] = 'Mail method';
+$LANG['Mail params'] = 'Mail params';
 // Translation of file modules/settings/mail/module.php
 
 $LANG['Mail method updated'] = 'Mail method updated';
@@ -43,33 +47,26 @@ $LANG['Set mail'] = 'Set mail';
 $LANG['submit'] = 'submit';
 $LANG['Set websites system email'] = 'Set websites system email';
 $LANG['Email'] = 'Email';
-// Translation of file modules/settings/mail/menu.inc
-
-$LANG['System email'] = 'System email';
-$LANG['Mail method'] = 'Mail method';
-$LANG['Mail params'] = 'Mail params';
-// Translation of file modules/settings/logo/module.php
-
-$LANG['Edit Logo'] = 'Edit Logo';
-// Translation of file modules/settings/install.inc
-
-$LANG['Look and feel'] = 'Look and feel';
-$LANG['SMTP Mail'] = 'SMTP Mail';
-// Translation of file modules/settings/system_lang.inc
-
-$LANG['settings'] = 'settings';
 // Translation of file modules/settings/menu.inc
 
 $LANG['Change Logo'] = 'Change Logo';
 $LANG['Change favicon'] = 'Change favicon';
 $LANG['Set template'] = 'Set template';
 $LANG['Edit Template Css'] = 'Edit Template Css';
-// Translation of file modules/settings/background/module.php
+// Translation of file modules/settings/template/views.php
 
-$LANG['Favicon settings'] = 'Favicon settings';
-// Translation of file modules/settings/favicon/module.php
+$LANG['Edit Template'] = 'Edit Template';
+$LANG['Select template'] = 'Select template';
+$LANG['Update'] = 'Update';
+$LANG['Edit Stylesheet'] = 'Edit Stylesheet';
+$LANG['Select Stylesheet'] = 'Select Stylesheet';
+// Translation of file modules/settings/template/module.php
 
-$LANG['Favicon settings'] = 'Favicon settings';
+$LANG['Edit Template'] = 'Edit Template';
+$LANG['Template has been updated'] = 'Template has been updated';
+$LANG['Edit Template Css'] = 'Edit Template Css';
+$LANG['CSS settings has been updated'] = 'CSS settings has been updated';
+$LANG['Select a template'] = 'Select a template';
 // Translation of file modules/settings/lib/module.php
 
 $LANG['No file was specified'] = 'No file was specified';
@@ -81,3 +78,6 @@ $LANG['Update image'] = 'Update image';
 $LANG['Update'] = 'Update';
 $LANG['Delete image'] = 'Delete image';
 $LANG['Delete'] = 'Delete';
+// Translation of file modules/settings/module.php
+
+$LANG['Site Settings'] = 'Site Settings';

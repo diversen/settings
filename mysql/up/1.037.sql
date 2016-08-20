@@ -1,3 +1,3 @@
 ALTER TABLE `settings` ADD `css` varchar(128) DEFAULT '';
 
-UPDATE `settings` SET `css` = 'blue' WHERE id = 1;
+UPDATE `settings` SET `css` = 'default' WHERE id = 1;
